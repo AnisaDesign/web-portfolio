@@ -1,14 +1,50 @@
 @import url(normalize.css);
-@import url("https://fonts.google.com/share?selection.family=Nunito:ital,wght@0,200..1000;1,200..1000|Open+Sans:ital,wght@0,300..800;1,300..800");
+/*@import url("https://fonts.google.com/share?selection.family=Nunito:ital,wght@0,200..1000;1,200..1000|Open+Sans:ital,wght@0,300..800;1,300..800");*/
 
 
 html {
   box-sizing: border-box;
 }
-*,
-*:before,
-*:after {
+
+*
+{
   box-sizing: inherit;
+}
+
+li, a {
+    font-family: "Nunito", bold;
+    font-weight:700;
+    font-size:16px;
+    color:#414141;
+    text-decoration:none;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: 20px;
+    /*max-width: 4rem;
+    margin: 0.5rem 2rem;*/
+  }
+
+.nav_links{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav_links li {
+display: inline-block;
+padding:0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
 }
 
 body {
@@ -44,6 +80,7 @@ h5 {
 h1 {
   margin-top: 0;
   font-size: 3rem;
+  font-family: "Nunito", bold;
 }
   
   .heading {
@@ -77,7 +114,7 @@ h1 {
     height: auto;
   }
 
-  /* --------------- Header and Nav Styles----*/
+  /* --------------- Header and Nav Styles
 
   .logo {
     max-width: 4rem;
@@ -106,36 +143,38 @@ h1 {
     text-decoration-color:#F5D320;
     text-decoration-line: underline;
   }
-
+----*/
   /*set width to the body and palce it to the center of the page*/
+
+/*
   body{
     width:80%;
     margin: 0 auto;
   }
-
-  /* select the nav container and apply properties */
+*/
+  /* select the nav container and apply properties 
   nav-container{
     margin-top:50px;
     overflow: hidden;
-     /*apply flex to get right and left nav in a row*/
+     /*apply flex to get right and left nav in a row
     display: flex;
-   /*push both blocks to the edges using justify-content*/
+   /*push both blocks to the edges using justify-content
    justify-content: space-between;
   
 
   }
 
-  /*target the ul and remove the bullets*/
+  /*target the ul and remove the bullets
   .right-side, .left-side{
     list-style-type: none;
   }
 
-  /*change li display property from block to inline block */
+  /*change li display property from block to inline block 
   .right-side li, .left-side li{
     display:inline-block;
   }
 
-  /*style the anchot elements*/
+  /*style the anchot elements
   .right-side li a, .left-side li a{
     text-decoration: none;
     display: block;
@@ -145,10 +184,4 @@ h1 {
     color: #414141;
     padding: 14px 16px;
     font-weight: bold;
-  }
-
-  /*apply hover*/
-  .right-side li a:hover, .left-side li a:hover{
-
-
   }
