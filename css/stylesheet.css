@@ -117,15 +117,91 @@ h3{
     margin:0;
     padding:30px 10%;
 }
+  
+  /* Clear floats after the columns */
+  .outer-container{
+    padding: 30px 10%;
+  }
 
-/* ------------ Footer Style --------------- */
+  .inner-container{
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .row:after {
+    clear: both;
+    padding: auto;
+  }
+
+  .column {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 50px;
+  }
+  
+  .left, .right {
+    width: 25%;
+  }
+
+  .middle {
+    width: 50%;
+  }
+
+/* ------------ Footer Style 
 footer {
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
     color: white;
     min-height: 20vh;
+    padding:30px 10%;
   }
+
+  .line {
+    border-bottom: 1px solid #F5D320;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .name{
+        width: 50%;
+  }
+
+  .email{
+    width: 50%;
+}
+
+.social{
+    width: 50%;
+}
+
+.footer-headline {
+    font-weight: bold;
+  }
+
+  .footer-list {
+    font-family: "Open+Sans", regular;
+    list-style: none;
+    padding: 0rem;
+    margin: 0;
+  }
+
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .inner-container {
+    margin-top: 1rem;
+    width: 80%;
+  }
+
 
   /* --------------- Header and Nav Styles
 
