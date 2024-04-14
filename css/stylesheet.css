@@ -1,6 +1,4 @@
-@import url(normalize.css);
 /*@import url("https://fonts.google.com/share?selection.family=Nunito:ital,wght@0,200..1000;1,200..1000|Open+Sans:ital,wght@0,300..800;1,300..800");*/
-
 
 html {
   box-sizing: border-box;
@@ -8,7 +6,9 @@ html {
 
 *
 {
-  box-sizing: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 li, a {
@@ -19,7 +19,7 @@ li, a {
     text-decoration:none;
 }
 
-.header {
+header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -28,14 +28,13 @@ li, a {
 
 .logo {
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: auto;
     /*max-width: 4rem;
     margin: 0.5rem 2rem;*/
   }
 
 .nav_links{
     list-style: none;
-    margin-left: 20px;
 }
 
 .nav_links li {
@@ -83,19 +82,15 @@ h1 {
   font-family: "Nunito", bold;
 }
   
-  .heading {
-    text-transform: uppercase;
-  }
-  
   h2,
   h3 {
     font-weight: bold;
     color: #414141;
-    margin-bottom: 3rem;
   }
   
   h2 {
     font-size: 2rem;
+    padding:3px 10%;
   }
   
   a {
@@ -112,6 +107,24 @@ h1 {
   figure {
     width: 564px;
     height: auto;
+  }
+
+h3{
+    margin:0.67em 0;
+}
+
+.intro{
+    margin:0;
+    padding:30px 10%;
+}
+
+/* ------------ Footer Style --------------- */
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    color: white;
+    min-height: 20vh;
   }
 
   /* --------------- Header and Nav Styles
@@ -185,3 +198,5 @@ h1 {
     padding: 14px 16px;
     font-weight: bold;
   }
+
+  <!--The Nav bar code was taken from this video tutorial on YouTube: https://www.youtube.com/watch?v=PwWHL3RyQgk-->
