@@ -119,12 +119,26 @@ h3{
 }
   
   /* Clear floats after the columns */
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid #F5D320;
+    align-items: center;
+    min-height: 20vh;
+    padding:30px 10%;
+    color:#414141;
+  }
+
   .outer-container{
+    display: flex;
+    flex-direction: row;
     padding: 30px 10%;
   }
 
   .inner-container{
     margin: 1rem;
+    margin-top: 0.5rem;
     width: 100%;
   }
 
@@ -147,6 +161,20 @@ h3{
   .middle {
     width: 50%;
   }
+
+  @media (max-width: 49em) {
+    .half-columns {
+      grid-column: auto / span 4;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .hero-text {
+      width: auto;
+      margin-left: 0;
+    }
+  }
+  
 
 /* ------------ Footer Style 
 footer {
