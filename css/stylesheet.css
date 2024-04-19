@@ -43,6 +43,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   min-height: 5rem;
+  background-color: red;
 }
 
 .nav-bar {
@@ -52,6 +53,7 @@ header {
     cursor: pointer;
     margin-right: auto;
     min-height: 5rem;
+    background-color: aquamarine;
   /*max-width: 4rem;
     margin: 0.5rem 2rem;*/
 }
@@ -61,6 +63,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #f5d320;
 }
 
 .nav-links li a {
