@@ -317,6 +317,13 @@ ul {
     padding: 0;
   }
 
+  .reference{
+font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+    
+  }
+
 @media (max-width: 49em) {
   .half-columns {
     grid-column: auto / span 4;
@@ -329,5 +336,6 @@ ul {
     margin-left: 0;
   }
 }
+
 
 /*--The Nav bar code was taken from this video tutorial on YouTube: https://www.youtube.com/watch?v=PwWHL3RyQgk--*/
