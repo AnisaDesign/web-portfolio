@@ -310,6 +310,7 @@ ul {
     list-style-type: none;
     color: white;
   }
+
   ul {
     list-style-type: none;
     color: white;
@@ -322,6 +323,7 @@ ul {
     font-size: 12px;
     font-style: light;
     font-variation-settings: "wdth" 100;
+    margin-top: 1rem;
     
   }
 
