@@ -45,7 +45,7 @@ header {
   min-height: 5rem;
 }
 
-.logo {
+.nav-bar {
     display:flex;
     justify-content: space-between;
     align-items: center;
