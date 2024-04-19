@@ -90,11 +90,16 @@ h3 {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 h3 {
   margin: 0.67em 0;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #414141;
 }
 /* Hyperlink Styles */
 
@@ -109,9 +114,16 @@ a:hover {
   text-decoration-line: underline;
 }
 
+.intro-homepage {
+    display: flex;
+    flex-direction: row;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
 /*--Info section--*/
 
-.about{
+.text-media{
     display: flex;
     flex-direction: row;
     margin-top:1rem;
@@ -138,6 +150,73 @@ a:hover {
   }
 
 .about-image{
+   /* display:flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-right: 0;
+    min-height: 80vh;
+    justify-content: flex-start;*/
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*----Work Page----*/
+
+.title-text{
+    display: flex;
+    flex-direction: row;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    padding-bottom: 0%;
+    align-items: flex-end;
+}
+
+.overview-title{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0rem;
+    width: 90%;
+    margin-top: 0;
+    margin-left:0;
+    margin-right: 7rem;
+    margin-bottom: 4rem;
+}
+
+.over-text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 30%;
+    margin-top: 0;
+    margin-left:0;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+}
+
+.process-images{
+    display: flex;
+    flex-direction: row;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    padding-bottom: 0%;
+}
+
+  .image-left{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 50%;
+    margin-top: 0;
+    margin-left:0;
+    margin-right: 1rem;
+    margin-bottom: 10rem;
+  }
+
+
+.image-right{
    /* display:flex;
     flex-direction: row;
     margin-top: 1rem;
