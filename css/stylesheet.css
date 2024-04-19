@@ -46,8 +46,12 @@ header {
 }
 
 .logo {
-  cursor: pointer;
-  margin-right: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-right: auto;
+    min-height: 5rem;
   /*max-width: 4rem;
     margin: 0.5rem 2rem;*/
 }
@@ -91,6 +95,7 @@ h3 {
 h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 
 h3 {
@@ -100,6 +105,7 @@ h3 {
 p {
     margin-bottom: 1rem;
     color: #414141;
+    font-family: "Open Sans", sans-serif;
 }
 /* Hyperlink Styles */
 
@@ -114,12 +120,14 @@ a:hover {
   text-decoration-line: underline;
 }
 
-.intro-homepage {
+.intro{
     display: flex;
     flex-direction: row;
     margin-top:1rem;
     margin-bottom: 1rem;
 }
+
+
 
 /*--Info section--*/
 
@@ -212,21 +220,52 @@ a:hover {
     margin-top: 0;
     margin-left:0;
     margin-right: 1rem;
-    margin-bottom: 10rem;
+    margin-bottom: 0%;
   }
 
 
 .image-right{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 50%;
+    margin-top: 0;
+    margin-left:0;
+    margin-right: 0rem;
+    margin-bottom: 0%;
+}
    /* display:flex;
     flex-direction: row;
     margin-top: 1rem;
     margin-right: 0;
     min-height: 80vh;
-    justify-content: flex-start;*/
+    justify-content: flex-start;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+}*/
+
+.caption{
+    display: block;
+    margin: 10px auto 20px;
 }
+
+.moodboard-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.work-images{
+    display: flex;
+    flex-direction: row;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    padding-bottom: 0%;
+}
+
 
 /* ------------ Footer Style------------ */
 
