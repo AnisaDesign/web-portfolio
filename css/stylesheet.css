@@ -73,9 +73,9 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", bold;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: 800;
   font-style: normal;
 }
 
