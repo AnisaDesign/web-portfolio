@@ -131,7 +131,7 @@ a:hover {
 .headline-section{
   display:flex;
   margin:auto;
-  padding:1rem;
+  padding-bottom:1rem;
 }
 
 .headline-wrapper{
