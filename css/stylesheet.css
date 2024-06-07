@@ -135,7 +135,8 @@ align-items:flex-end;
 position:relative;
 min-height: 2rem;
 width: 25rem;
-margin-left: -2rem;
+margin:auto;
+/*margin-left: -2rem;*/
 }
 
 .headline {
