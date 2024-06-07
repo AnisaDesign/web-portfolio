@@ -138,7 +138,7 @@ width: 25rem;
 margin-left: -2rem;
 }
 
-headline {
+.headline {
   position: absolute;
   font-size:3rem;
   left:6rem;
