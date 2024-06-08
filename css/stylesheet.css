@@ -318,7 +318,7 @@ margin-top: 1rem;
 footer {
   border-top: 20px solid #f5d320;
   border-spacing: 5px;
-  border-top: 2px solid #f5d320;
+  border-inline: 2px solid #f5d320;
   color: #414141;
   margin-top: 3rem;
   padding-top: 2rem;
