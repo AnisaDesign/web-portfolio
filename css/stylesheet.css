@@ -316,7 +316,8 @@ margin-top: 1rem;
 /* ------------ Footer Style------------ */
 
 footer {
-  border-top: 10px solid #f5d320;;
+  border-top: 20px solid #f5d320;
+  border-spacing: 5px;
   border-top: 2px solid #f5d320;
   color: #414141;
   margin-top: 3rem;
