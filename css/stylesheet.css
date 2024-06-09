@@ -238,7 +238,8 @@ margin-top: 1rem;
 
 .mfsstitle{
   display:flex;
-  flex-wrap: wrap; 
+  flex-wrap: row-wrap; 
+  justify-content: center;
   margin-top: 1rem;
   margin-bottom:1rem;
 }
