@@ -236,21 +236,37 @@ margin-top: 1rem;
 }
 /*----MFSS page----*/
 
-.headline-wrapper{
+.headline-wrapper {
   background: #FFDB20;
   display: flex;
-  align-items:flex-end;
-  justify-content:flex-end;
-  position:relative;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
   min-height: 2rem;
-  width:25rem;
+  width: 20rem;
   margin-left: -2rem;
+  margin-top:2rem;
 }
 
-.headline{
+.headline {
   position: absolute;
   font-size: 3rem;
-  left: 6rem;
+  left: 7rem;
+}
+
+.subhead{
+  position:absolute;
+  left:5rem;
+}
+
+.subtext{
+    display: flex;
+    flex-direction: wrap;
+    align-content: flex-start;
+    margin-top:2rem;
+    justify-content: space-between;
+    padding-bottom: 0%;
+    width:40%;
 }
 
 .title-text{
