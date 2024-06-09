@@ -248,18 +248,18 @@ margin-top: 1rem;
   margin-top:2rem;
 }
 
-.headline {
+.headline01 {
   position: absolute;
   font-size: 3rem;
   left: 7rem;
 }
 
-.subhead{
+.subhead01{
   position:absolute;
   left:5rem;
 }
 
-.subtext{
+.subtext01{
     display: flex;
     flex-direction: wrap;
     align-content: flex-start;
