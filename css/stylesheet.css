@@ -201,34 +201,31 @@ margin-top: 1rem;
 .text-01{
   display:flex;
   flex-direction: column;
-  padding-top: 1rem;
+  padding-top: 30rem;
   width: 50%;
   margin-top: 0;
   margin-left:0;
   margin-right:1rem;
-  padding-top: 30rem;
 }
 
 .text-02{
   display:flex;
   flex-direction: column;
-  padding-top: 1rem;
+  padding-top: 34rem;
   width: 50%;
   margin-top: 0;
   margin-left:0;
   margin-right:1rem;
-  padding-top: 34rem;
 }
 
 .text-03{
   display:flex;
   flex-direction: column;
-  padding-top: 1rem;
+  padding-top: 48rem;
   width: 50%;
   margin-top: 0;
   margin-left:0;
   margin-right:1rem;
-  padding-top: 48rem;
 }
 
 .image-01{
@@ -237,7 +234,24 @@ margin-top: 1rem;
   padding-right: 1rem;
   margin-bottom: 1rem;
 }
-/*----Work Page----*/
+/*----MFSS page----*/
+
+.headline-wrapper{
+  background: #FFDB20;
+  display: flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  position:relative;
+  min-height: 2rem;
+  width:25rem;
+  margin-left: -2rem;
+}
+
+.headline{
+  position: absolute;
+  font-size: 3rem;
+  left: 6rem;
+}
 
 .title-text{
     display: flex;
