@@ -150,7 +150,7 @@ margin-top: 1rem;
 
 
 
-/*--Info section--*/
+/*--About section--*/
 
 .text-media{
     display: flex;
@@ -259,12 +259,12 @@ margin-top: 1rem;
 .headline01 {
   position: absolute;
   font-size: 3rem;
-  left: 7rem;
+  left: 2rem;
 }
 
 .subhead01{
   position:absolute;
-  left:5rem;
+  left:2rem;
   padding-top:1rem;
 }
 
