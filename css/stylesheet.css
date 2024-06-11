@@ -375,6 +375,21 @@ margin-top: 1rem;
     padding-bottom: 0%;
 }
 
+.columns {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.column {
+  flex: 1;
+  background:yellow;
+  margin:2px;
+  padding:10px;
+  &:first-child {margin-left: 0;}
+  &:last-child {margin-right:0;}
+}
 
 /* ------------ Footer Style------------ */
 
