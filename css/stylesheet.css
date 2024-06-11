@@ -375,14 +375,14 @@ margin-top: 1rem;
     padding-bottom: 0%;
 }
 
-.columns {
+.pagecolumns {
   display:flex;
   flex-flow:row wrap;
   justify-content: center;
   margin: 5px 0;
 }
 
-.column {
+.pagecolumn {
   flex: 1;
   background:yellow;
   margin:2px;
