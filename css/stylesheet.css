@@ -396,6 +396,16 @@ margin-top: 1rem;
   padding-top: 0.5rem;
 }
 
+.item-pagination{
+  background:#f5d320;
+}
+
+.item-pagination--prev-next {
+  display: flex;
+  padding: 3vw 4vw 3vw;
+}
+
+
 /* ------------ Footer Style------------ */
 
 footer {
