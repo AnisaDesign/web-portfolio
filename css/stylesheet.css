@@ -403,6 +403,10 @@ margin-top: 1rem;
 .item-pagination--prev-next {
   display: flex;
   padding: 3vw 4vw 3vw;
+  flex-wrap: row-wrap; 
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom:1rem;
 }
 
 
