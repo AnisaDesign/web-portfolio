@@ -400,7 +400,7 @@ margin-top: 1rem;
   background:#f5d320;
 }
 
-.item-pagination--prev-next {
+.item-pagination-prev-next {
   display: flex;
   padding: 3vw 4vw 3vw;
   flex-wrap: row-wrap; 
