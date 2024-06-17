@@ -396,9 +396,6 @@ margin-top: 1rem;
   padding-top: 0.5rem;
 }
 
-.item-pagination{
-  background:#f5d320;
-}
 
 .item-pagination {
   display: flex;
@@ -407,6 +404,7 @@ margin-top: 1rem;
   justify-content: space-between;
   margin-top: 1rem;
   margin-bottom:1rem;
+  background:#f5d320;
 }
 
 
