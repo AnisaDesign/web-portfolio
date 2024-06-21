@@ -152,6 +152,7 @@ margin-top: 1rem;
   text-decoration-line: underline;
   text-decoration-color: #f5d320;
   line-height: 1.4;
+  text-underline-offset: 14px;
 }
 
 /*--About section--*/
@@ -301,7 +302,6 @@ margin-top: 1rem;
     padding-top: 0rem;
     margin-top: 0;
     margin-left:0;
-    margin-right: 7rem;
     margin-bottom: 4rem;
 }
 
