@@ -428,7 +428,6 @@ margin-top: 1rem;
 .research-pagecolumns ul li {
 
   display:flex;
-  list-style: circle;
   flex-flow:row wrap;
   justify-content: center;
   margin: 10px 0;
@@ -441,6 +440,12 @@ margin-top: 1rem;
   &:first-child {margin-left: 0;}
   &:last-child {margin-right:0;}
 }
+
+li{
+  list-style-type:circle;
+  color: black;
+}
+
 
 
 /* ------------ Footer Style------------ */
