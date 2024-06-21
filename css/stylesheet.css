@@ -441,13 +441,6 @@ margin-top: 1rem;
   &:last-child {margin-right:0;}
 }
 
-li{
-  list-style-type:circle;
-  color: black;
-}
-
-
-
 /* ------------ Footer Style------------ */
 
 footer {
