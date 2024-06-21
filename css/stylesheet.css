@@ -236,7 +236,7 @@ margin-top: 1rem;
 }
 /*----MFSS page----*/
 
-.mfsstitle{
+.topictitle{
   display:flex;
   flex-wrap: row-wrap; 
   justify-content: space-between;
@@ -288,6 +288,7 @@ margin-top: 1rem;
     justify-content: space-between;
     padding-bottom: 0%;
     align-items: flex-end;
+    background-color: #FAFAFA;
 }
 
 .overview-title{
