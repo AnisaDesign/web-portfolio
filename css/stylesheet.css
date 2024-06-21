@@ -423,6 +423,23 @@ margin-top: 1rem;
   
 }
 
+/*-------------TeaKit-------------------*/
+
+.research-pagecolumns {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.research-pagecolumn {
+  flex: 1;
+  margin:2px;
+  padding:10px;
+  &:first-child {margin-left: 0;}
+  &:last-child {margin-right:0;}
+}
+
 
 /* ------------ Footer Style------------ */
 
