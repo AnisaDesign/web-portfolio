@@ -428,7 +428,7 @@ margin-top: 1rem;
 .research-pagecolumns ul li {
 
   display:flex;
-  list-style: disc;
+  list-style: circle;
   flex-flow:row wrap;
   justify-content: center;
   margin: 10px 0;
