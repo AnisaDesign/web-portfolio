@@ -430,6 +430,17 @@ margin-top: 1rem;
 
 /*-------------TeaKit-------------------*/
 
+.column-container{
+  display: flex;
+  flex-direction: row;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  padding-bottom: 0%;
+  align-items: flex-end;
+  background-color: #FAFAFA;  
+}
+
 .research01-pagecolumns {
   display:flex;
   flex-flow:row wrap;
