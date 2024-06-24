@@ -303,10 +303,10 @@ margin-top: 1rem;
     margin-top: 0;
     margin-left:0;
     margin-bottom: 2rem;
-    width:80%;
+    width:90%;
 }
 
-.over-text{
+.overview-text{
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
