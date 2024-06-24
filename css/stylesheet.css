@@ -430,6 +430,23 @@ margin-top: 1rem;
 
 /*-------------TeaKit-------------------*/
 
+.research01-pagecolumns {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.list-style-pagecolumns {
+  flex: 1;
+  margin:2px;
+  padding:10px;
+  line-height: 1.4rem;
+  &:first-child {margin-left: 0;}
+  &:last-child {margin-right:0;}
+}
+
+
 .research-pagecolumns {
   display:flex;
   flex-flow:row wrap;
