@@ -155,6 +155,11 @@ margin-top: 1rem;
   text-underline-offset: 14px;
 }
 
+.subtitle{
+display:flex;
+padding-top: 1rem;
+}
+
 /*--About section--*/
 
 .text-media{
