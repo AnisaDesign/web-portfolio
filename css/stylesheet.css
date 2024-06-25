@@ -510,6 +510,8 @@ padding-bottom: 1.5rem;
  }
 
  .face-card-wireframe {
+  display: flex;
+  flex-direction: row;
   width: 23%;
   margin: 10px;
  }
