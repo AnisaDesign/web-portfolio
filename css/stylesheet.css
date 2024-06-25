@@ -477,6 +477,22 @@ padding-top: 1rem;
   &:last-child {margin-right:0;}
 }
 
+.two-columns{
+  display: flex;
+  flex-direction: row;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  padding-bottom: 0%;
+  align-items: flex-end;
+}
+
+.two-columns-title{
+display: flex;
+padding-top: 0.5rem;
+}
+
+
 /* ------------ Footer Style------------ */
 
 footer {
