@@ -531,8 +531,6 @@ padding-bottom: 1.5rem;
 
 /* CARDS */
 .face-card {
-  display:flex;
-  flex-direction: row;
   align-items: center;
   width: 20%;
   margin: 5px;
