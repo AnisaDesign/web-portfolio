@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+ol {
+  counter-reset: number-list-item;
+}
+
 header {
   display: flex;
   justify-content: flex-end;
