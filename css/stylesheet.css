@@ -40,6 +40,7 @@ a {
 
 ol {
   counter-reset: number-list-item;
+  
   > li {
     list-style-type: none;
     counter-increment: number-list-item;
@@ -50,8 +51,8 @@ ol {
       width: 35px;
       padding-right: 5px;
 
-      font-family: 'Merriweather', serif;
-      font-size: 125%;
+      font-family: 'Nunito', bold;
+      font-size: 16px;
       font-style: bold;
     }
   }
