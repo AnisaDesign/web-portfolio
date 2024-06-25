@@ -525,6 +525,7 @@ padding-bottom: 1.5rem;
 .card-wrapper {
   display: flex;
   flex-direction: row;
+  width:100%;
 }
 
 .card {
