@@ -503,15 +503,13 @@ padding-bottom: 1.5rem;
 
  .cards-wireframes{
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items:center;
   width:100%;
   margin-bottom: 1rem;
  }
 
  .face-card-wireframe {
-  display: flex;
-  flex-direction: row;
   width: 23%;
   margin: 10px;
  }
