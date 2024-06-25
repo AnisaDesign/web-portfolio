@@ -533,12 +533,10 @@ padding-bottom: 1.5rem;
 }
 
 .card-overlay-text {
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
-  background: blue;
   line-height: 1.4rem;
 }
 
