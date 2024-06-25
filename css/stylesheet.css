@@ -539,10 +539,12 @@ padding-bottom: 1.5rem;
   right: 0;
   width: 100%;
   line-height: 1.4rem;
+  text-align: center;
 }
 
 .card-lower-description{
   color:black;
+  text-align: center;
   line-height: 1.4rem;
 }
 
