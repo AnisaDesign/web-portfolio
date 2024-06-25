@@ -496,7 +496,14 @@ padding-bottom: 1.5rem;
 }
 
 ol { padding-left: 50px; }
-
+li { 
+  color: #4F4F4F; 
+  padding-left: 16px;
+  margin-top: 24px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 
 /* ------------ Footer Style------------ */
