@@ -495,7 +495,7 @@ display: flex;
 padding-bottom: 1.5rem;
 }
 
-/*-----Cards-----*/
+/*-----Cards
 
 .outer-container {
   display: flex;
@@ -527,7 +527,13 @@ padding-bottom: 1.5rem;
   width: 100%;
   margin: 2rem;
 }
+---*/
 
+/* CARDS */
+.face-card {
+  width: 15%;
+  margin: 5px;
+ }
 
 
 
