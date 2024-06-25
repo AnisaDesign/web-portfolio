@@ -38,25 +38,6 @@ a {
   text-decoration: none;
 }
 
-ol {
-  counter-reset: number-list-item;
-  
-  > li {
-    list-style-type: none;
-    counter-increment: number-list-item;
-
-    &:before {
-      content: counter(number-list-item) ". ";
-      display: inline-block;
-      width: 35px;
-      padding-right: 1px;
-
-      font-family: 'Nunito';
-      font-size: 16px;
-      font-style: bold;
-    }
-  }
-}
 
 header {
   display: flex;
@@ -514,6 +495,7 @@ display: flex;
 padding-bottom: 1.5rem;
 }
 
+ol { padding-left: 50px; }
 
 
 
