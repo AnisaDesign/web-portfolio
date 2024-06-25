@@ -40,6 +40,21 @@ a {
 
 ol {
   counter-reset: number-list-item;
+  > li {
+    list-style-type: none;
+    counter-increment: number-list-item;
+
+    &:before {
+      content: counter(number-list-item) ". ";
+      display: inline-block;
+      width: 35px;
+      padding-right: 5px;
+
+      font-family: 'Merriweather', serif;
+      font-size: 125%;
+      font-style: bold;
+    }
+  }
 }
 
 header {
