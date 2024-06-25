@@ -499,19 +499,19 @@ padding-bottom: 1.5rem;
 .face-card {
   width: 23%;
   margin: 10px;
+  border-radius: 4;
  }
 
  .cards-wireframes{
   display:flex;
   flex-direction: row;
-  align-items:center;
+  justify-content:center;
   width:100%;
   margin-bottom: 1rem;
  }
 
  .face-card-wireframe {
-  width: 23%;
-  margin: 10px;
+  margin: 28px;
  }
 
  .outer-container {
@@ -520,7 +520,7 @@ padding-bottom: 1.5rem;
   align-items: center;
   width: 100%;
   margin-bottom: 1rem;
-}
+ }
 
 .center {
   display: block;
