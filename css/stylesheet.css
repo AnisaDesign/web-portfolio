@@ -49,9 +49,9 @@ ol {
       content: counter(number-list-item) ". ";
       display: inline-block;
       width: 35px;
-      padding-right: 5px;
+      padding-right: 1px;
 
-      font-family: 'Nunito', bold;
+      font-family: 'Nunito';
       font-size: 16px;
       font-style: bold;
     }
