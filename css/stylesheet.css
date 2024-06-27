@@ -568,6 +568,19 @@ padding-bottom: 1.5rem;
   line-height: 1.4rem;
 }
 
+/* ------------Creative Projects ---------*/
+
+.w3-container h5{
+  text-align:center;
+  color:grey;
+  font-weight:light;
+}
+
+.w3-hover-grayscale{
+  cursor:pointer;
+}
+
+
 
 /* ------------ Footer Style------------ */
 
