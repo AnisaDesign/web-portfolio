@@ -572,7 +572,7 @@ padding-bottom: 1.5rem;
 
 .outer-container02 {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   gap: 10px;
   align-items: center;
   width: 100%;
