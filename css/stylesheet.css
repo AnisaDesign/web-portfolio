@@ -601,7 +601,17 @@ padding: 5px;
   object-position: bottom;
  }
 
+ .inner-container02 {
+  margin-top: 1rem;
+  width: 100%;
+}
 
+ .cards02 {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
 /*
 .center {
   display: block;
@@ -610,17 +620,9 @@ padding: 5px;
   width: 100%;
 }
 
-.inner-container02 {
-  margin-top: 1rem;
-  width: 100%;
-}
 
-.cards02 {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  padding: 0;
-}
+
+
 
 .card-wrapper02 {
   display: flex;
