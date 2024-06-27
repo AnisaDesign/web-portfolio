@@ -587,20 +587,18 @@ padding-bottom: 1.5rem;
 */
 .outer-container02{
 display: flex;
-max-width: 1200px;
-width:100%;
-flex-wrap: wrap;
 justify-content: space-around;
-gap:10px;
-padding: 5px;
+flex-wrap: wrap;
+margin: 15px 0;
 }
 
-.card02{
-  width:250px;
-  height:150px;
-  object-fit: cover;
-  object-position: bottom;
- }
+.outer-container02 img{
+  flex-wrap: wrap;
+  width: 320px;
+  height: 300px;
+  margin: 10px 0;
+}
+
 
  .inner-container02 {
   margin-top: 1rem;
