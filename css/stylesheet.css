@@ -570,7 +570,7 @@ padding-bottom: 1.5rem;
 
 /* ------------Creative Projects ---------*/
 
-.outer-container02 {
+/*.outer-container02 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -578,11 +578,20 @@ padding-bottom: 1.5rem;
   width: 100%;
   margin-bottom: 1rem;
  }
-
- img{
+*/
+ .card-image02{
   width:300px;
+  height:200px;
  }
 
+element{
+display: flex;
+max-width: 1200px;
+width:100%;
+flex-wrap: wrap;
+}
+
+/*
 .center {
   display: block;
   margin-left: auto;
