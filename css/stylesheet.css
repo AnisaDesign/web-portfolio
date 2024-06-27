@@ -573,6 +573,8 @@ padding-bottom: 1.5rem;
 .outer-container02 {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap-reverse;
+  gap: 10px;
   align-items: center;
   width: 100%;
   margin-bottom: 1rem;
