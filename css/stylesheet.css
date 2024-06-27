@@ -571,9 +571,7 @@ padding-bottom: 1.5rem;
 /* ------------Creative Projects ---------*/
 
 .w3-container h5{
-  text-align:center;
-  color:grey;
-  font-weight:light;
+  text-align: left;
 }
 
 .w3-hover-grayscale{
