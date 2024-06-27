@@ -599,6 +599,15 @@ margin: 15px 0;
   margin: 10px 0;
 }
 
+.card-title-text02 {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  line-height: 1.4rem;
+  text-align: center;
+}
+
 
  /*.inner-container02 {
   margin-top: 1rem;
