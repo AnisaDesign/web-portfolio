@@ -592,7 +592,7 @@ flex-wrap: wrap;
 margin: 15px 0;
 }
 
-.card02{
+.outer-container02 img{
   flex-wrap: wrap;
   width: 320px;
   height: 300px;
