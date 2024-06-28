@@ -139,20 +139,21 @@ a:hover {
 .headline-wrapper{
 background:#FFDB20;
 display:flex;
-align-items:flex-end;
+align-items:center;
 position:relative;
-min-height: 3rem;
-width: 18rem;
-margin-left: 35rem;
-margin-top: 4rem;
+min-height: 2rem;
+width: 31rem;
+margin-left: 20rem;
+margin-top: 2rem;
 /*margin-left: -2rem;*/
 }
 
 .headline {
   position: absolute;
   font-size:3rem;
-  left: 0.5em;
-  bottom: 0.5em;
+  align-content: center;
+  /*left: 1.5em;*/
+  bottom: 0.5rem;
 }
 
 mark{
