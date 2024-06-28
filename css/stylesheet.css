@@ -583,15 +583,6 @@ padding-bottom: 1.5rem;
 
 /* ------------Creative Projects ---------*/
 
-/*.outer-container02 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 1rem;
- }
-*/
 .outer-container02{
 display: flex;
 justify-content: space-around;
@@ -617,49 +608,6 @@ margin: 15px 0;
 
 .card02 {
   margin: 1rem;
-}
-
- /*.inner-container02 {
-  margin-top: 1rem;
-  width: 100%;
-}
-
- .cards02 {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  padding: 0;
-}
-/*
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-
-
-
-
-.card-wrapper02 {
-  display: flex;
-  flex-direction: row;
-  width:100%;
-}
-
-.card02 {
-  width: 100%;
-  margin: 2rem;
-}
-
-.card-title-text02 {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  line-height: 1.4rem;
-  text-align: center;
 }
 
 /* ------------ Footer Style------------ */
