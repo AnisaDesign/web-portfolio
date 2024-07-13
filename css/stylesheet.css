@@ -108,6 +108,7 @@ h2 {
 
 h3 {
   margin: -1.33em 0;
+  /*margin: 0.67em 0;*/
 }
 
 p {
@@ -308,6 +309,7 @@ padding-top: 1rem;
   background: #FFDB20;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
   position: relative;
   min-height: 2rem;
   width: 15rem;
