@@ -303,6 +303,44 @@ padding-top: 1rem;
     width:60%;
     line-height: 1.4;
 }
+/*---//----*/
+.headline-wrapper02 {
+  background: #FFDB20;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  min-height: 1rem;
+  width: 13rem;
+  margin-left: -2rem;
+  margin-top:2rem;
+}
+
+.headline02 {
+  position: absolute;
+  font-size: 3rem;
+  left: 2rem;
+  padding-top: 1rem;
+}
+
+.subhead02{
+  position:absolute;
+  left:2rem;
+  padding-top:1rem;
+}
+
+.subtext02{
+    display: flex;
+    flex-direction: wrap;
+    align-content: flex-start;
+    margin-top:2rem;
+    justify-content: space-between;
+    padding-bottom: 0%;
+    width:60%;
+    line-height: 1.4;
+}
+
+/*---//----*/
 
 .title-text{
     display: flex;
