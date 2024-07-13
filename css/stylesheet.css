@@ -311,14 +311,14 @@ padding-top: 1rem;
   position: relative;
   min-height: 2rem;
   width: 13rem;
-  margin-left: -2rem;
+  margin-left: 2rem;
   margin-top:2rem;
 }
 
 .headline02 {
   position: absolute;
   font-size: 3rem;
-  left: 2rem;
+  left: 1rem;
   padding-top: 1rem;
 }
 
