@@ -653,6 +653,8 @@ margin: 15px 0;
   display: flex;
   justify-content: space-around;
   margin: 15px 0;
+  padding-bottom: 1rem;
+  border-bottom: 20px solid #f5d320;
   }
   
   /*
@@ -679,9 +681,9 @@ margin: 15px 0;
 /* ------------ Footer Style------------ */
 
 footer {
-  border-top: 20px solid #f5d320;
+  border-top: 3px solid #f5d320;
   color: #414141;
-  margin-top: 3rem;
+  margin-top: -0.5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
