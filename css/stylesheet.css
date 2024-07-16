@@ -430,6 +430,7 @@ figcaption{
     font-style: italic;
     padding: 2px;
     text-align: center;
+    line-height: 1.2;
 }
 
 .moodboard-image{
