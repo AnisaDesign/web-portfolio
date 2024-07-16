@@ -107,8 +107,8 @@ h2 {
 }
 
 h3 {
-  margin: -1.33em 0;
-  /*margin: 0.67em 0;*/
+  /*margin: -1.33em 0;*/
+ margin: 0.67em 0;
 }
 
 p {
@@ -328,6 +328,7 @@ padding-top: 1rem;
   position:absolute;
   left:2rem;
   padding-top:1rem;
+  margin: -1.33em 0;
 }
 
 .subtext02{
@@ -641,7 +642,7 @@ margin: 15px 0;
   left: 0;
   right: 0;
   width: 100%;
-  line-height: 1rem;
+  line-height: 1.2rem;
   text-align: left;
 }
 
