@@ -516,7 +516,7 @@ figcaption{
   height:300px;
 }
 
-.swiper-slide:nth-child(1){
+.swiper-slide:nth-child(1) {
   background-image: url(../img/webdesign-homepage-mockup.jpg);
 }
 
