@@ -59,6 +59,9 @@ header {
     cursor: pointer;
     margin-right: auto;
     min-height: 5rem;
+    background-color: #F7F7F7;
+    width: 100%;
+
   /*max-width: 4rem;
     margin: 0.5rem 2rem;*/
 }
