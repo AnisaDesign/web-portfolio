@@ -685,12 +685,12 @@ margin: 15px 0;
 
  .research-title{
   display: flex;
-  justify-content: center;  
+  justify-content: center;
+  padding-bottom: 1rem;
   }
 
  .research-content{
   margin: 0 auto;
-  padding: 4rem 0;
   width: 960px;
   max-width: 100%;
  }
