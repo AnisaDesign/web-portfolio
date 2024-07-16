@@ -517,14 +517,14 @@ figcaption{
 }
 
 .swiper-slide:nth-child(1){
-  background-image: url("webdesign-homepage-mockup.jpg");
+  background-image: url(../img/webdesign-homepage-mockup.jpg);
 }
 
 .swiper-slide:nth-child(2){
-  background-image: url("teakit-productpage.jpg");
+  background-image: url(../img/teakit-productpage.jpg);
 }
 .swiper-slide:nth-child(3){
-  background-image: url("circlesubi-homepage.jpg");
+  background-image: url(../img/circlesubi-homepage.jpg);
 }
 /*-------------TeaKit-------------------*/
 
