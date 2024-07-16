@@ -425,6 +425,13 @@ padding-top: 1rem;
     
 }
 
+figcaption{
+    color: #807E7E;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
 .moodboard-image{
     display: block;
     margin-left: auto;
