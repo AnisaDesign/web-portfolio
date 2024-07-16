@@ -686,8 +686,6 @@ margin: 15px 0;
  .research-title{
   display: flex;
   justify-content: center;  
-  width: 960px;
-  margin-left: 5rem; 
   }
 
  .research-content{
