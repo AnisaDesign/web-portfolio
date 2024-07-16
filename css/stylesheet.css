@@ -508,12 +508,11 @@ figcaption{
   padding-bottom:50px;
 }
 
-.swiper-slide{
-  background-color: #f5d320;
+.swiper-slide {
   background-position: center;
-  background-size:cover;
-  width:300px;
-  height:300px;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
 .swiper-slide:nth-child(1) {
