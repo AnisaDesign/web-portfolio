@@ -116,6 +116,7 @@ p {
     margin-bottom: 1rem;
     color: #414141;
     font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
 }
 /* Hyperlink Styles */
 
@@ -687,9 +688,12 @@ margin: 15px 0;
   align-items: center;
  }
 
- .research-text{
-  display: flex;
-  padding: 1rem;
+ .research-content{
+  margin: 0 auto;
+  padding: 4rem 0;
+  width: 960px;
+  max-width: 100%;
+  line-height: 1rem;
  }
 
 /* ------------ Footer Style------------ */
