@@ -502,29 +502,6 @@ figcaption{
   
 }
 
-.swiper-container{
-  width:600px;
-  padding-top:50px;
-  padding-bottom:50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.swiper-slide:nth-child(1) {
-  background-image: url(../img/webdesign-homepage-mockup.jpg);
-}
-
-.swiper-slide:nth-child(2){
-  background-image: url(../img/teakit-productpage.jpg);
-}
-.swiper-slide:nth-child(3){
-  background-image: url(../img/circlesubi-homepage.jpg);
-}
 /*-------------TeaKit-------------------*/
 
 .column-container{
