@@ -656,9 +656,11 @@ padding-bottom: 1.5rem;
   margin-left: 85px;
   font-size: 14px;
 }
-.left-nav-item {
+
+.left-nav-item span{
   margin-left: 0;
 }
+
 /*
 .nav-item.left span{
   margin-right:2px;
