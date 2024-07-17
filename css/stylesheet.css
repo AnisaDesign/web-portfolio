@@ -656,10 +656,14 @@ padding-bottom: 1.5rem;
   margin-left: 85px;
   font-size: 14px;
 }
-.nav-item.left span {
-  margin-right: 0;
-  margin-left: 2px;
+.nav-item.left{
+  margin-left: 0;
 }
+
+.nav-item.right{
+  margin-right: 0;
+}
+
 .arrow {
   font-size: 40px;
   display: flex;
@@ -780,10 +784,10 @@ footer {
   padding: auto;
 }
 
-.left,
+/*.left,
 .right {
   width: 25%;
-}
+}*/
 
 .middle {
   width: 50%;
