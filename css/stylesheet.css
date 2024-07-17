@@ -653,23 +653,28 @@ padding-bottom: 1.5rem;
   font-size: 24px;
 }
 .nav-item span {
-  margin-left: 85px;
+  margin-left: 0;
+  margin-right:0;
   font-size: 14px;
 }
 
 .left-nav-item span{
   margin-left: 0;
+  float: left;
 }
 
+.span{
+  padding-bottom: 2px;
+}
 /*
 .nav-item.left span{
   margin-right:2px;
   margin-left: 0;
 }*/
 
-.nav-item.right{
-  margin-right: 0;
-  margin-left: 2px;
+.nav-item.right span{
+float: right;
+  /*margin-left: 2px;*/
 }
 
 .arrow {
