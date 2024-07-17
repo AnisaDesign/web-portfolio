@@ -697,6 +697,16 @@ line-height: 1.2rem;
     /*margin-left: 2px;*/
   }
 
+  .nav-container-center{
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  height:7rem;
+  padding:0 50px;
+  background-color: #f5d320;
+  margin-bottom: 1rem;
+
+  }
 /* ------------Creative Projects ---------*/
 
 .outer-container02{
