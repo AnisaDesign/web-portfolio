@@ -181,11 +181,11 @@ padding-top: 1rem;
 
 .text-media{
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
+    /*flex-direction: row;*/
     margin-top:1rem;
     margin-bottom: 1rem;
     justify-content: space-between;
-    padding-bottom: 2%;
   }
 
   .text{
