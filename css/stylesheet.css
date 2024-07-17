@@ -696,9 +696,10 @@ line-height: 1.2rem;
   justify-content: right;
   width: 100%;
   height:7rem;
-  padding-left: 900px;  
+  padding-left: 500px;  
   background-color: #f5d320;
   margin-bottom: 1rem;
+  float: right;
   }
 
 .nav-item.center span{
