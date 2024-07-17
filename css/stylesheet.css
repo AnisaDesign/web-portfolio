@@ -203,6 +203,10 @@ display:flex;
 padding-top: 1rem;
 }
 
+.coming-soon{
+  display: flex;
+  justify-content: center;
+}
 /*--About section--*/
 
 .text-media{
