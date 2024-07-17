@@ -138,6 +138,32 @@ a:hover {
     margin-bottom: 1rem;
 }*/
 
+.headline-wrapper-index {
+  background:#FFDB20;
+  display:flex;
+  align-items:center;
+  position:relative;
+  min-height: 2rem;
+  width: 24rem;
+  margin-left: 30rem;
+  margin-top: 4rem;
+  /*margin-left: -2rem;*/
+  }
+  
+  .headline-index {
+    position: absolute;
+    font-size:3rem;
+    align-content: center;
+    left: -0.5em;
+    bottom: 0.5rem;
+  }
+
+.border-bottom{
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 20px solid #f5d320;
+  
+}
 
 .headline-wrapper{
 background:#FFDB20;
