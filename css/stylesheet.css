@@ -643,6 +643,7 @@ padding-bottom: 1.5rem;
   height:7rem;
   padding:0 50px;
   background-color: #f5d320;
+  margin-bottom: 1rem;
 }
 .nav-item {
   display: flex;
@@ -652,20 +653,21 @@ padding-bottom: 1.5rem;
   font-size: 24px;
 }
 .nav-item span {
-  margin-right: 10px;
+  margin-left: 85px;
   font-size: 14px;
 }
 .nav-item.left span {
   margin-right: 0;
-  margin-left: 10px;
+  margin-left: 2px;
 }
 .arrow {
   font-size: 40px;
   display: flex;
   align-items: center;
+  padding:1rem;
 }
 .left .arrow {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 /* ------------Creative Projects ---------*/
