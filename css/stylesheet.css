@@ -292,7 +292,7 @@ padding-top: 1rem;
 
 .subhead01{
   position:absolute;
-  left:2rem;
+  left:10rem;
   padding-top:1rem;
 }
 
@@ -651,7 +651,7 @@ padding-bottom: 1.5rem;
   color: white;
   text-decoration: none;
   font-size: 24px;
-  line-height: 1.2rem;
+
 }
 .nav-item span {
   margin-left: 0;
@@ -662,6 +662,7 @@ padding-bottom: 1.5rem;
 .left-nav-item span{
   margin-left: 0;
   float: left;
+  line-height: 1.2rem;
 }
 
 .span{
@@ -675,6 +676,7 @@ padding-bottom: 1.5rem;
 
 .nav-item.right span{
 float: right;
+line-height: 1.2rem;
   /*margin-left: 2px;*/
 }
 
