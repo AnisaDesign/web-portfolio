@@ -189,14 +189,29 @@ padding-top: 1rem;
     justify-content: space-between;*/
   }
 
+  .headline-media{
+    align-items: flex-end;
+    justify-content: space-between;
+      /*display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      margin-top:1rem;
+      margin-bottom: 1rem;
+      justify-content: space-between;*/
+    }
+
   @media screen and (min-width:768px) {
     .row{
       display:flex;
-      flex-wrap:wrap;
     }
     
-    .image-01{
-      flex-basis: 30%;
+    .content-01{
+      flex-basis:fit-content;
+      margin: 0.3em;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-right: 1rem;
+      margin-bottom: 1rem;
     }
   } 
 
