@@ -730,8 +730,8 @@ padding-bottom: 1.5rem;
   color: white;
   text-decoration: none;
   font-size: 24px;
-
 }
+
 .nav-item span {
   margin-left: 0;
   margin-right:0;
@@ -742,22 +742,31 @@ padding-bottom: 1.5rem;
   margin-left: 0;
   float: left;
   line-height: 1.2rem;
+  width: 100%;
 }
 
 .span{
   padding-bottom: 2px;
 }
-/*
+
 .nav-item.left span{
   margin-right:2px;
   margin-left: 0;
-}*/
+}
 
 .nav-item.right span{
 float: right;
 line-height: 1.2rem;
-  /*margin-left: 2px;*/
+margin-right: -80px;
 }
+
+.right-nav-item span{
+  float: right;
+  line-height: 1.2rem;
+  width:100%;
+}
+
+
 
 .arrow {
   font-size: 40px;
@@ -765,6 +774,7 @@ line-height: 1.2rem;
   align-items: center;
   padding:1rem;
 }
+
 .left .arrow {
   transform: rotate(0deg);
 }
