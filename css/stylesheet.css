@@ -738,6 +738,12 @@ padding-bottom: 1.5rem;
   font-size: 14px;
 }
 
+.span{
+  padding-bottom: 2px;
+}
+
+/*----left---*/
+
 .left-nav-item span{
   margin-left: 0;
   float: left;
@@ -745,26 +751,27 @@ padding-bottom: 1.5rem;
   width: 100%;
 }
 
-.span{
-  padding-bottom: 2px;
-}
-
 .nav-item.left span{
   margin-right:2px;
   margin-left: 0;
 }
 
-.nav-item.right span{
-float: right;
-line-height: 1.2rem;
-margin-right: -80px;
-}
+/*----right---*/
 
 .right-nav-item span{
+  margin-right:0;
   float: right;
   line-height: 1.2rem;
-  width:100%;
+  width: 100%;
 }
+
+.nav-item.right span{
+  float: right;
+  line-height: 1.2rem;
+}
+
+
+/*----arrow---*/
 
 .arrow {
   font-size: 40px;
