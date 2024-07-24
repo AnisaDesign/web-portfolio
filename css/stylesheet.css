@@ -390,7 +390,7 @@ padding-top: 1rem;
   align-items: flex-end;
   justify-content: flex-end;
   position: relative;
-  min-height: 2rem;
+  min-height: 1.4rem;
   width: 15rem;
   margin-left: 1rem;
   margin-top:2rem;
@@ -406,7 +406,7 @@ padding-top: 1rem;
 
 .subhead02{
   position:absolute;
-  left:2rem;
+  left:1rem;
   padding-top:1rem;
   margin: -1.33em 0;
 }
