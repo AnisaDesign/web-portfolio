@@ -147,13 +147,11 @@ a:hover {
   position:relative;
   min-height: 2rem;
   width: 24rem;
-  margin-left: 4rem;
-  margin-top: 4rem;
   /*margin-left: -2rem;*/
   }
   
   .headline-index {
-    position: absolute;
+    position: flex;
     font-size:3rem;
     align-content: center;
     left: -0.5em;
@@ -224,7 +222,7 @@ padding-top: 1rem;
 }
 
 .headline03 {
-  position: absolute;
+  /*position: absolute;*/
   font-size: 3rem;
   left: 1rem;
   padding-top: 1rem;
@@ -244,7 +242,7 @@ padding-top: 1rem;
 }
 
 .headline04 {
-  position: absolute;
+  /*position: absolute;*/
   font-size: 3rem;
   left: 1rem;
   padding-top: 1rem;
@@ -389,7 +387,7 @@ padding-top: 1rem;
 }
 
 .headline01 {
-  position: absolute;
+  /*position: absolute;*/
   font-size: 3rem;
   left: 2rem;
   padding-top: 1rem;
