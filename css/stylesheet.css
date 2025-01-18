@@ -233,6 +233,13 @@ padding-top: 1rem;
 .section-heading {
   font-size: 3rem;
 }
+
+/*--Brands and Design section--*/
+
+.left-section {
+  justify-content: left;
+}
+
 /*--About section--*/
 
 .headline-wrapper03 {
