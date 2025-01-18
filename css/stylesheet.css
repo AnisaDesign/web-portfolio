@@ -236,6 +236,15 @@ padding-top: 1rem;
 
 /*--Brands and Design section--*/
 
+.image-background {
+  display: flex;
+  flex-direction:row;
+  background: url(../images/yellowframe.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:auto;
+}
+
 .left-section {
   justify-content: left;
 }
