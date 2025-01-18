@@ -207,6 +207,14 @@ padding-top: 1rem;
   display: flex;
   justify-content: center;
 }
+
+/*--Index section--*/
+.image-background {
+  display: flex;
+  flex-direction:row;
+  margin-bottom: 1rem;
+  width
+}
 /*--About section--*/
 
 .headline-wrapper03 {
@@ -364,51 +372,7 @@ padding-top: 1rem;
   padding-right: 1rem;
   margin-bottom: 1rem;
 }
-/*----MFSS page----*/
 
-.topictitle{
-  display:flex;
-  flex-wrap: row-wrap; 
-  justify-content: space-between;
-  margin-top: 1rem;
-  margin-bottom:1rem;
-}
-
-.headline-wrapper01 {
-  background: #FFDB20;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  position: relative;
-  min-height: 1rem;
-  width: 20rem;
-  margin-left: -2rem;
-  margin-top:2rem;
-}
-
-.headline01 {
-  /*position: absolute;*/
-  font-size: 3rem;
-  left: 2rem;
-  padding-top: 1rem;
-}
-
-.subhead01{
-  position:absolute;
-  left:10rem;
-  padding-top:1rem;
-}
-
-.subtext01{
-    display: flex;
-    flex-direction: wrap;
-    align-content: flex-start;
-    margin-top:2rem;
-    justify-content: space-between;
-    padding-bottom: 0%;
-    width:60%;
-    line-height: 1.4;
-}
 /*---//----*/
 
 .headline-wrapper02 {
