@@ -212,8 +212,6 @@ padding-top: 1rem;
 .image-background {
   display: flex;
   flex-direction:row;
-  margin-bottom: 1rem;
-  min-height: 10vh;
   background: url(../images/yellowframe.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -227,11 +225,8 @@ padding-top: 1rem;
 .text-overlap-01 {
   display: flex;
   flex-direction: column;
-  padding:2rem;
-  margin-top: 20rem;
-  margin-right: 5rem;
-  margin-bottom: 20rem;
-  margin-left: 5rem;
+  padding:1rem;
+  margin-bottom: 2rem;
   color:#414141;
 }
 
