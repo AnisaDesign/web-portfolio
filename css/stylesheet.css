@@ -234,56 +234,65 @@ padding-top: 1rem;
   font-size: 3rem;
 }
 
-/*--Brands and Design section--*/
+/*--Brands & Design section--*/
+.image-background-02 {
+  display: flex;
+  flex-direction:row;
+  background: url(../images/yellowframe02.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto;
+}
+
+/*--RESEARCH section--*/
+.image-background-01 {
+  display: flex;
+  flex-direction:row;
+  background: url(../images/yellowframe01.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:auto;
+}
+
+.text-description{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 10rem;
+}
 
 
 /*--About section--*/
 
-.headline-wrapper03 {
-  background: #FFDB20;
+.image-background-03 {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  position: relative;
-  min-height: 1.4rem;
-  width: 19rem;
-  margin-left: 1rem;
-  margin-top:2rem;
+  flex-direction:row;
+  background: url(../images/yellowframe01.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:auto;
 }
 
-.headline03 {
-  position: flex;
-  font-size: 3rem;
-  left: 1rem;
-  padding-top: 1rem;
+.left-section{
+  justify-content: space-between;
 }
 
-.headline-wrapper04 {
-  background: #FFDB20;
+.text-overlap-03{
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  position: relative;
-  min-height: 1.4rem;
-  width: 26rem;
-  margin-left: 1rem;
-  margin-top:2rem;
-  margin-bottom:1rem;
+  flex-direction:row;
+  padding:1rem;
+  margin-bottom: 2rem;
+  color:#414141;
 }
 
-.headline04 {
-  /*position: absolute;*/
-  font-size: 3rem;
-  left: 1rem;
-  padding-top: 1rem;
+.text-description-03{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: 10rem;
 }
 
-.subhead04{
-  position:absolute;
-  left:1rem;
-  padding-top:1rem;
-  margin: -1.33em 0;
-}
+
 
 .text-media{
   align-items: flex-end;
