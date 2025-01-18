@@ -213,7 +213,7 @@ padding-top: 1rem;
   display: flex;
   flex-direction:row;
   margin-bottom: 1rem;
-  min-height: 80vh;
+  min-height: 10vh;
   background: url(../images/yellowframe.svg);
   background-repeat: no-repeat;
   background-position: center;
