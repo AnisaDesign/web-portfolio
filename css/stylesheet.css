@@ -218,7 +218,7 @@ padding-top: 1rem;
   background: url(../images/yellowframe.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size:auto;
 }
 
 .middle-section{
