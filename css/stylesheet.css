@@ -213,7 +213,12 @@ padding-top: 1rem;
   display: flex;
   flex-direction:row;
   margin-bottom: 1rem;
-  width
+  width:80%;
+  min-height: 80vh;
+  background: url(../images/yellowframe.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*--About section--*/
 
