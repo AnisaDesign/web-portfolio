@@ -306,6 +306,7 @@ mark {
   background-repeat: no-repeat;
   background-position: left;
   background-size: auto;
+  padding:0 80px;
 }
 
 .left-section {
