@@ -29,9 +29,9 @@ body {
   display:flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
   text-align: left;
-  padding:0 80px;
+  padding:0 100px;
+  margin: 0px auto;
 }
 
 .wrapper {
