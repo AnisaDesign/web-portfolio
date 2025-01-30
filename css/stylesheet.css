@@ -222,9 +222,10 @@ a:hover {
 }
 
 mark {
-  background-color: #ffdb20;
+  background-color: #f5d320;
   color: #414141;
   height: 0.2rem;
+  border-radius: 2px;
 }
 
 .title {
@@ -315,7 +316,8 @@ mark {
 
 .text-overlap-03 {
   display: flex;
-  flex-direction: row;
+  align-items: flex-end;
+  flex-direction: column;
   padding: 1rem;
   margin-bottom: 2rem;
   color: #414141;
