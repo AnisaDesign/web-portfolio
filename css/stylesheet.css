@@ -77,27 +77,9 @@ a {
   z-index: 1000;
 }
 
-/*.wordmark {
-  margin-bottom: 1rem;
+.introduction {
+  background-color: #f7f7f7;
 }
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: 5rem;
-}
-
-.nav-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  margin-right: auto;
-  min-height: 5rem;
-  background-color: #F7F7F7;
-  /*max-width: 4rem;
-    margin: 0.5rem 2rem;}*/
 
 .nav-links {
   display: flex;
