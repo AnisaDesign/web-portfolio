@@ -77,10 +77,6 @@ a {
   z-index: 1000;
 }
 
-.introduction {
-  background-color: #f7f7f7;
-}
-
 .nav-links {
   display: flex;
   flex-direction: column;
