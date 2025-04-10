@@ -278,7 +278,7 @@ mark {
 /*--About section--*/
 
 .yellow-stripe {
-  background: url(../images/yellowframe01.svg);
+  /*background: url(../images/yellowframe01.svg);*/
   background-repeat: repeat-x;
   background-position: 0 4.5rem;
 }
