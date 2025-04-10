@@ -174,6 +174,12 @@ a:hover {
   border-bottom: 20px solid #f5d320;
 }
 
+.border-bottom01 {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 20px solid #f5d320;
+}
+
 .headline-wrapper {
   background: #ffdb20;
   display: flex;
@@ -747,7 +753,7 @@ figcaption {
 
 .outer-container02 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 15px 0;
 }
