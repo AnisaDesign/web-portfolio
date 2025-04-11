@@ -258,6 +258,17 @@ mark {
   background-size: auto;
 }
 
+.examples {
+  display: inline-block;
+  width: 30%;
+  text-decoration: none;
+}
+
+.examples img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*--RESEARCH section--*/
 .image-background-01 {
   display: flex;
@@ -789,6 +800,19 @@ figcaption {
   height: 300px;
   margin: 10px 0;
 }
+
+.outer-container04 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.outer-container04 img {
+  flex-wrap: wrap;
+  width: 320px;
+  height: 300px;
+  margin: 10px 0;
 
 .card-title-text02 {
   bottom: 0;
