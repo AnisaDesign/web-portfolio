@@ -743,7 +743,38 @@ figcaption {
   /*margin-left: 2px;*/
 }
 
-/* ------------Creative Projects ---------*/
+/* ------------Brand & Design ---------*/
+
+.campaign-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 2 rem;
+  margin-top: 3rem;
+}
+
+.campaign-content {
+  flex: 1 1 500px; /* Grow + shrink + base width */
+}
+
+.campaign-heading {
+  margin-bottom: 15rem; /* Adds space between heading and paragraph */
+}
+
+.campaign-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.campaign-image {
+  flex: 1 1 400px;
+}
+
+.campaign-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
 .outer-container02 {
   display: flex;
@@ -977,6 +1008,31 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 768px) {
+  .campaign-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .campaign-content,
+  .campaign-image {
+    width: 100%;
+  }
+
+  .campaign-heading h1 {
+    font-size: 2rem;
+  }
+
+  .campaign-heading h2 {
+    font-size: 1.2rem;
+  }
+
+  .campaign-description p {
+    font-size: 1rem;
+  }
 }
 
 /*--The Nav bar code was taken from this video tutorial on YouTube: https://www.youtube.com/watch?v=PwWHL3RyQgk--*/
