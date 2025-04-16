@@ -1080,31 +1080,6 @@ ul.footer-columns {
   padding: 1rem;
 }
 
-.back-to-top {
-  display: inline-block;
-  text-align: center;
-  margin: 2rem auto;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  background-color: #f5d320;
-  color: #414141;
-  border-radius: 6px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease;
-}
-
-.back-to-top:hover {
-  background-color: #ffe74c;
-  transform: translateY(-2px);
-}
-
-/*.left,
-.right {
-  width: 25%;
-}*/
-
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   .hero-text {
