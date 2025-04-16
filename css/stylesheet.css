@@ -1081,19 +1081,18 @@ ul.footer-columns {
 }
 
 .back-to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: #f5d320;
-  color: #414141;
+  display: inline-block;
+  text-align: center;
+  margin: 2rem auto;
   padding: 0.5rem 1rem;
-  border-radius: 6px;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: #f5d320;
+  color: #414141;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
-  z-index: 999;
 }
 
 .back-to-top:hover {
