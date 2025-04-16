@@ -760,7 +760,7 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
-  padding: 2 rem;
+  padding: 2rem;
   margin-top: 3rem;
 }
 
@@ -813,6 +813,7 @@ figcaption {
   width: 320px;
   height: 300px;
   margin: 10px 0;
+}
 
 .card-title-text02 {
   bottom: 0;
@@ -955,76 +956,78 @@ ul {
   margin-top: 1rem;
 }
 
-/* Small devices (landscape phones, 576px and up) */
+
+
+/*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   .hero-text {
     width: auto;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/*Medium devices (tablets, 768px and up)*/ 
 @media (min-width: 768px) {
   .row {
     display: flex;
-  }
+  } */
 
-  .content-01 {
-    flex-basis: fit-content;
-    margin: 0.3em;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 5rem;
-    text-align: right;
-  }
-
-  .content-02 {
-    flex-basis: fit-content;
-    margin: 0.3em;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .content-03 {
-    flex-basis: fit-content;
-    margin: 0.3em;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .content-04 {
-    flex-basis: fit-content;
-    margin: 0.3em;
-    margin-bottom: 1rem;
-    margin-right: 5rem;
-    padding: 1rem;
-    text-align: left;
-  }
-
-  .text {
-    width: 50%;
-  }
-
-  .nav-bar {
-    flex-direction: row;
-  }
-
-  .nav-links {
-    flex-direction: row;
-    width: 40%;
-  }
-
-  .headline-media {
-    padding: 0;
-  }
+.content-01 {
+  flex-basis: fit-content;
+  margin: 0.3em;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+  text-align: right;
 }
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+
+.content-02 {
+  flex-basis: fit-content;
+  margin: 0.3em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content-03 {
+  flex-basis: fit-content;
+  margin: 0.3em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content-04 {
+  flex-basis: fit-content;
+  margin: 0.3em;
+  margin-bottom: 1rem;
+  margin-right: 5rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.text {
+  width: 50%;
+}
+
+.nav-bar {
+  flex-direction: row;
+}
+
+.nav-links {
+  flex-direction: row;
+  width: 40%;
+}
+
+.headline-media {
+  padding: 0;
+}
+
+/*Large devices (desktops, 992px and up) @media (min-width: 992px) {
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  /* Add your CSS styles here */
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -1034,11 +1037,11 @@ ul {
 @media screen and (min-width: 768px) {
 }
 
-/* Responsive Breakpoint */
+/*Responsive Breakpoint*/
 @media (max-width: 768px) {
   .campaign-container {
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .campaign-content,
@@ -1058,5 +1061,3 @@ ul {
     font-size: 1rem;
   }
 }
-
-/*--The Nav bar code was taken from this video tutorial on YouTube: https://www.youtube.com/watch?v=PwWHL3RyQgk--*/
