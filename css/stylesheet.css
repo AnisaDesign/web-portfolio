@@ -28,7 +28,7 @@ body {
   justify-content: center;
   text-align: left;
   padding: 0 100px;
-  margin: 0px auto;
+  margin: 3rem auto; /* Adds top & bottom spacing */
 }
 
 .wrapper {
@@ -227,6 +227,12 @@ mark {
 .coming-soon {
   display: flex;
   justify-content: center;
+}
+
+.project:nth-of-type(even) {
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 3rem 5vw; /* fluid spacing left and right */
 }
 
 /*--Index section--*/
