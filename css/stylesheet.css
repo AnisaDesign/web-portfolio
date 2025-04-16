@@ -260,10 +260,10 @@ mark {
 }
 
 ol.sub-text {
-  max-width: 750px;
-  margin: 0 auto;
-  text-align: center;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
   line-height: 1.6;
+  list-style-type: decimal;
 }
 
 ol.sub-text li {
@@ -670,9 +670,10 @@ figcaption {
 }
 
 .sub-text {
-  font-size: 1rem;
-  line-height: 1.4;
-  padding-top: 0.5rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.6;
 }
 
 /*------------TeaKit-------------------*/
