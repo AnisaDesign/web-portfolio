@@ -251,9 +251,9 @@ mark {
 /*Index Updated*/
 
 .latest-works {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;*/
   text-align: center;
   padding: 40px 20px;
   margin: 0 auto;
