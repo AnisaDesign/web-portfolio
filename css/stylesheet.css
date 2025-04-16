@@ -86,6 +86,10 @@ a {
   transition: all 0.3s ease 0s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Heading Styles */
 
 /* ------------------------------
@@ -233,6 +237,17 @@ mark {
   background-color: #fafafa;
   border-radius: 12px;
   padding: 3rem 5vw; /* fluid spacing left and right */
+}
+
+ol.sub-text {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+  list-style-type: decimal;
+}
+
+ol.sub-text li {
+  margin-bottom: 0.5rem;
 }
 
 /*--Index section--*/
@@ -1063,6 +1078,27 @@ ul.footer-columns {
 .row {
   display: block; /* stack content vertically on small screens */
   padding: 1rem;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #f5d320;
+  color: #414141;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  background-color: #ffe74c;
+  transform: translateY(-2px);
 }
 
 /*.left,
