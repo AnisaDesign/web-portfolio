@@ -248,6 +248,63 @@ mark {
   font-size: 1.75rem;
 }
 
+/*Index Updated*/
+
+.latest-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 100px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.projects-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-card {
+  flex: 1 1 48%;
+  max-width: 48%;
+  text-align: left;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+}
+
+.project-card h3 {
+  margin: 8px 0 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
 /*--Brands & Design section--*/
 .image-background-02 {
   display: flex;
@@ -337,8 +394,9 @@ mark {
 }
 
 .medium-text {
+  max-width: 100%;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .about-image {
@@ -916,7 +974,7 @@ figcaption {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8rem;
+  gap: 5rem;
   padding: 0;
   margin: 0 0 1rem 0;
 }
@@ -933,6 +991,12 @@ figcaption {
   font-weight: 700;
 }
 
+ul.footer-columns {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .middle-section01 {
   text-align: center;
   font-size: 0.9rem;
@@ -940,14 +1004,13 @@ figcaption {
   padding-top: 1rem;
 }
 
-ul.footer-columns {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .row:after {
   clear: both;
+}
+
+.row {
+  display: block; /* stack content vertically on small screens */
+  padding: 1rem;
 }
 
 /*.left,
@@ -964,24 +1027,21 @@ ul.footer-columns {
 
 @media (min-width: 768px) {
   .row {
-    display: flex;
-    flex-wrap: wrap;
+    display: row;
+    flex-wrap: center;
     gap: 2rem;
     justify-content: space-between;
   }
 
   .text {
-    width: 50%;
+    width: 100%;
+    margin-top: 1rem;
   }
 
-  .text-media .content-01,
-  .text-media .content-04 {
-    width: 45%;
-  }
-
-  .text-media .content-02,
-  .text-media .content-03 {
-    width: 50%;
+  .medium-text {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .footer-columns {
