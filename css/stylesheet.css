@@ -962,7 +962,35 @@ ul.footer-columns {
   }
 }
 
-/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .text {
+    width: 50%;
+  }
+
+  .text-media .content-01,
+  .text-media .content-04 {
+    width: 45%;
+  }
+
+  .text-media .content-02,
+  .text-media .content-03 {
+    width: 50%;
+  }
+
+  .footer-columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .row {
     display: flex;
@@ -1020,22 +1048,7 @@ ul.footer-columns {
   }
 }
 
-/*Large devices (desktops, 992px and up) @media (min-width: 992px) {
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* Add your CSS styles here */
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-}
-
-@media screen and (min-width: 768px) {
-}
-
-/*Responsive Breakpoint*/
+/* -- Footer Styles --- */
 @media (max-width: 768px) {
   .footer-columns {
     flex-direction: column;
@@ -1048,7 +1061,10 @@ ul.footer-columns {
     max-width: 100%;
     text-align: center;
   }
+}
 
+/*---Brands and Design--*/
+@media (max-width: 768px) {
   .campaign-container {
     flex-direction: column;
     padding: 2rem;
@@ -1070,6 +1086,21 @@ ul.footer-columns {
   .campaign-description p {
     font-size: 1rem;
   }
+}
+
+/*Large devices (desktops, 992px and up) @media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Add your CSS styles here */
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+@media screen and (min-width: 768px) {
 }
 
 /*ul {
