@@ -252,13 +252,11 @@ mark {
 
 .latest-works {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: center;
   padding: 0 100px;
   margin: 0 auto;
   margin-bottom: 60px;
-  text-align: center;
 }
 
 .section-title {
