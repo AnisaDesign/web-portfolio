@@ -263,6 +263,8 @@ ol.sub-text li {
   line-height: 1.6;
 }
 
+/* Paragraph text */
+
 .text-wrapper {
   max-width: 960px;
   margin: 0 auto;
@@ -271,15 +273,22 @@ ol.sub-text li {
 }
 
 .text-wrapper p {
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto 1.5rem auto;
   font-size: 1.1rem;
   line-height: 1.7;
   color: #555;
 }
 
+.wide-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* Section padding */
 section.project {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .project {
@@ -649,10 +658,9 @@ figcaption {
 
 .moodboard-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  padding: 1rem;
+  margin: 2rem auto;
+  width: 100%;
+  border-radius: 12px;
 }
 
 .work-images {
