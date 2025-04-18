@@ -98,7 +98,7 @@ body {
 p {
   max-width: 960px;
   margin: 0 auto 1.5rem auto;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   line-height: 1.7;
 }
 
@@ -241,8 +241,10 @@ mark {
 
 .project:nth-of-type(even) {
   background-color: #fafafa;
-  border-radius: 12px;
-  padding: 3rem 5vw; /* fluid spacing left and right */
+  padding: 6rem 2rem;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
 }
 
 ol.sub-text {
@@ -287,18 +289,15 @@ ol.sub-text li {
 }
 
 /* Section padding */
-section.project {
-  padding: 4rem 2rem;
-}
 
 .project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  padding: 0 1rem;
-  margin: 3rem auto;
-  max-width: 1200px;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .project-title,
@@ -306,6 +305,19 @@ section.project {
   margin: 0 auto;
   max-width: 960px;
   padding: 2rem 1rem;
+}
+
+section.project.bg-light {
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 6rem 2rem;
+}
+
+.full-width-grey {
+  background-color: #f9f9f9;
+  width: 100%;
+  margin: 0;
+  padding: 4rem 2rem; /* top and bottom padding */
 }
 
 /*--Index section--*/
@@ -1278,4 +1290,8 @@ ul.footer-columns {
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+}
+
+section + section {
+  margin-top: 4rem;
 }
