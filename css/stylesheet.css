@@ -285,7 +285,7 @@ ol.sub-text li {
 .wide-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 3rem 1rem;
 }
 
 /* Section padding */
@@ -843,7 +843,57 @@ figcaption {
   line-height: 1.4rem;
 }
 
-/*---Pagination---*/
+/*Pagination*/
+
+.nav-container-outer {
+  width: 100%;
+  background-color: #f5d320; /* yellow full background */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* small space between text and arrow */
+  text-decoration: none;
+  color: #414141;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.nav-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.left .nav-text {
+  text-align: left;
+}
+
+.right .nav-text {
+  text-align: right;
+}
+
+.arrow {
+  font-size: 2rem;
+}
+
+/*---Pagination
+
 
 .nav-container {
   display: flex;
@@ -872,7 +922,7 @@ figcaption {
   padding-bottom: 2px;
 }
 
-/*----left---*/
+/*----left
 
 .left-nav-item span {
   margin-left: 0;
@@ -886,7 +936,7 @@ figcaption {
   margin-left: 0;
 }
 
-/*----right---*/
+/*----right
 
 .right-nav-item span {
   margin-right: 0;
@@ -900,7 +950,7 @@ figcaption {
   line-height: 1.2rem;
 }
 
-/*----arrow---*/
+/*----arrow
 
 .arrow {
   font-size: 40px;
@@ -928,7 +978,6 @@ figcaption {
   float: right;
   line-height: 1.2rem;
   /*margin-left: 2px;*/
-}
 
 /* ------------Brand & Design ---------*/
 
@@ -1087,19 +1136,32 @@ figcaption {
 }
 
 /* Footer layout */
+
+.footer-background {
+  background-color: #f7f7f7;
+  border-top: 8px solid #f5d320;
+  padding: 2rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .footer-columns {
   list-style: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; /* <<< changed from center to space-between */
   flex-wrap: wrap;
-  gap: 5rem;
-  padding: 0;
-  margin: 0 0 1rem 0;
+  max-width: 1200px; /* <<< NEW: set same width as your nav-container */
+  margin: 0 auto 1rem auto; /* <<< NEW: center it */
+  padding: 0 2rem; /* optional: add a little breathing room */
+  gap: 2rem; /* <<< decrease gap */
 }
 
 .column {
-  flex: 1 1 200px;
+  flex: 1 1 30%;
   max-width: 250px; /* Optional: keeps them from stretching too wide */
   text-align: center; /* Center text inside each column */
 }
