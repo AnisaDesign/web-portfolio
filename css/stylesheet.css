@@ -295,7 +295,7 @@ ol.sub-text li {
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   margin: 0 auto;
   max-width: 1400px;
 }
@@ -307,17 +307,15 @@ ol.sub-text li {
   padding: 2rem 1rem;
 }
 
-section.project.bg-light {
-  background-color: #f9f9f9;
-  width: 100%;
-  padding: 6rem 2rem;
-}
-
 .full-width-grey {
   background-color: #f9f9f9;
   width: 100%;
   margin: 0;
   padding: 4rem 2rem; /* top and bottom padding */
+}
+
+section.project {
+  padding-bottom: 1rem; /* shrink bottom space of your first section */
 }
 
 /*--Index section--*/
@@ -355,9 +353,9 @@ section.project.bg-light {
 
 .latest-works {
   text-align: center;
-  padding: 40px 20px;
+  padding: 0 10px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .section-title {
@@ -372,6 +370,7 @@ section.project.bg-light {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  padding-bottom: 2rem;
 }
 
 .project-card {
@@ -1352,8 +1351,4 @@ ul.footer-columns {
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-}
-
-section + section {
-  margin-top: 4rem;
 }
