@@ -47,13 +47,13 @@ a {
 
 #header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
   width: 100%;
   height: 80px;
   background-color: #f7f7f7;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 80px;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
   z-index: 1000;
@@ -61,13 +61,19 @@ a {
 
 .nav-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem 0;
+  gap: 2rem;
+  list-style: none;
 }
 
-.nav-links li a {
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #414141;
   transition: all 0.3s ease 0s;
 }
 
@@ -1144,44 +1150,47 @@ ul.footer-columns {
 /*Medium devices (tablets, 768px and up)
 @media (min-width: 768px)
 
-/* -- Footer Styles --- */
-@media (max-width: 768px) {
-  .footer-columns {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .column {
-    flex: none;
-    max-width: 100%;
-    text-align: center;
-  }
-}
-
 /*---UX/UI--*/
 
-@media (max-width: 768px) {
-  .project-description {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-  .project-title,
-  .text-description-03 {
-    width: 100%;
-    padding: 1.5rem;
-    text-align: center;
-  }
-
-  .list-style-pagecolumns {
-    flex: 1 1 100%;
-  }
-}
-
 /*---Brands and Design--*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* headline-media */
+
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto; /* let it grow with content */
+    background-color: #f7f7f7;
+    padding: 1.5rem 0 1rem 0; /* top bigger, bottom smaller */
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25); /* put the shadow back! */
+    z-index: 1000;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #414141;
+  }
+
   .headline-media {
     flex-direction: column;
     text-align: center;
@@ -1225,12 +1234,39 @@ ul.footer-columns {
     width: 90%;
     max-width: 400px;
     margin: 1rem auto;
-    margin-bottom: 2rem;
   }
 
   .projects-flex {
     flex-direction: column;
     align-items: center;
+  }
+
+  .project-description {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .project-title,
+  .text-description-03 {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .list-style-pagecolumns {
+    flex: 1 1 100%;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .column {
+    flex: none;
+    max-width: 100%;
+    text-align: center;
   }
 }
 
