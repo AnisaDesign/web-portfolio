@@ -40,7 +40,7 @@ li,
 a {
   font-family: "Nunito", sans-serif;
   /*font-weight: 700;*/
-  font-size: 16px;
+  font-size: 18px;
   color: #414141;
   text-decoration: none;
 }
@@ -291,7 +291,7 @@ ol.sub-text li {
 .wide-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 2rem;
 }
 
 /* Section padding */
@@ -317,7 +317,7 @@ ol.sub-text li {
   background-color: #f9f9f9;
   width: 100%;
   margin: 0;
-  padding: 4rem 2rem; /* top and bottom padding */
+  padding: 2rem; /* top and bottom padding */
 }
 
 section.project {
