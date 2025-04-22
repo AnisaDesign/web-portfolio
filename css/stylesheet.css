@@ -930,38 +930,59 @@ figcaption {
   border-radius: 8px;
 }
 
+/* Brands&Design*/
+
+.section-title-brands {
+  font-size: 2.5rem;
+  margin-top: 5rem; /* <-- This pushes it down nicely */
+  margin-bottom: 2rem; /* Optional, to add a little space under */
+  text-align: center;
+  font-weight: 700;
+}
+
 .outer-container02 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
-  padding: 4rem 2rem;
-  max-width: 1400px;
+  gap: 4rem; /*space between cards*/
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
 .card02 {
   flex: 1 1 300px;
-  max-width: 300px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
+.card02 img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 8px;
+}
+
 .card02 img:hover {
-  transform: scale (1.03); /*slight zoom on hover*/
+  transform: scale(1.03); /*slight zoom on hover*/
+  transition: transform 0.3s ease;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
 .card-title-text02 {
   margin-top: 1rem;
-  font-size: 1.1rem;
-  color: #414141;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/*--//--*/
 
 .outer-container04 {
   display: flex;
@@ -975,19 +996,6 @@ figcaption {
   width: 320px;
   height: 300px;
   margin: 10px 0;
-}
-
-.card-title-text02 {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  line-height: 1.2rem;
-  text-align: left;
-}
-
-.card02 {
-  margin: 1rem;
 }
 
 .outer-container03 {
@@ -1334,6 +1342,16 @@ ul.footer-columns {
     height: auto;
     margin: 0 auto;
     display: block;
+  }
+
+  /* Brands and Design */
+
+  .outer-container02 {
+    padding: 2rem 1rem;
+  }
+  .card02 {
+    flex: 1 1 90%;
+    max-width: 90%;
   }
 }
 
