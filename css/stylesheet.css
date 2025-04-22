@@ -932,16 +932,35 @@ figcaption {
 
 .outer-container02 {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 15px 0;
+  justify-content: center;
+  gap: 5rem;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.outer-container02 img {
-  flex-wrap: wrap;
-  width: 320px;
-  height: 300px;
-  margin: 10px 0;
+.card02 {
+  flex: 1 1 300px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card02 img:hover {
+  transform: scale (1.03); /*slight zoom on hover*/
+}
+
+.card-title-text02 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #414141;
 }
 
 .outer-container04 {
