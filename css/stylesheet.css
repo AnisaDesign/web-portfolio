@@ -1295,6 +1295,27 @@ ul.footer-columns {
     font-size: 0.95rem;
     padding: 0 1rem;
   }
+
+  .cards-wireframes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .face-card-wireframe {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .moodboard-image img {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 /* Small device */
