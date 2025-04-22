@@ -999,49 +999,59 @@ figcaption {
   margin: 10px 0;
 }
 
-/*--Research--*/
+/*--Research homepage--*/
 
 .outer-container03 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem; /* space between cards */
+  gap: 4rem; /*space between cards*/
   max-width: 1200px;
-  margin: 1rem auto;
-  margin-bottom: 5rem;
-  padding: 0 2rem;
+  margin: 0 auto;
+  padding: 2rem 2rem;
 }
-
-/*--
-.card-title-text03 {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  line-height: 1rem;
-  text-align: left;
-}
---*/
 
 .card03 {
-  flex: 1 1 300px;
-  max-width: 400px;
+  flex: 1 1 450px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
-.card03:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+.card-image03 {
+  flex: 1 1 450px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
+
 .card-image03 img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 8px;
+}
+
+.card03:hover .card-image03 img {
+  transform: scale(1.03); /*slight zoom on hover*/
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.card-title-text03 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1.8rem;
 }
 
 /*-----------Research sub sections-----------*/
@@ -1380,7 +1390,7 @@ ul.footer-columns {
     max-width: 90%;
   }
 
-  /* Research homepage*/
+  /* Research homepage for mobile*/
 
   .project-description {
     text-align: center;
@@ -1390,20 +1400,30 @@ ul.footer-columns {
 
   .outer-container03 {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* stack them */
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    gap: 2rem;
   }
 
   .card03 {
-    width: 90%;
-    max-width: 400px;
-    margin-bottom: 2rem;
+    width: 90%; /* wider on mobile */
+    max-width: 400px; /* limit it slightly */
+    text-align: center;
   }
 
-  .text-description-03 {
-    text-align: center;
+  .card-image03 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .card-title-text02 {
+    margin-top: 1rem;
     padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
   }
 }
 
