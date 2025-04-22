@@ -1524,7 +1524,63 @@ ul.footer-columns {
   }
 
   .bibliography {
+    font-size: 1rem; /* or even 0.95rem */
+    padding: 0 1rem;
+    line-height: 1.4;
+    word-break: break-word; /* only affects bibliography */
+  }
+
+  .bibliography p {
+    word-break: break-word;
+  }
+
+  /*Pagination for Mobile*/
+
+  .nav-container-left {
+    padding: 1.2rem 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .nav-item.left {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+    margin-left: 0; /* remove large gap on mobile */
+  }
+
+  .nav-text-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+  }
+
+  .nav-container-right {
+    justify-content: right; /* center on mobile */
+    padding: 1.2rem 1rem;
+  }
+
+  .nav-item.next {
+    margin-right: 0; /* remove large desktop margin */
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .nav-text-research {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+  }
+
+  .nav-item.next .arrow {
     font-size: 1.5rem;
+    line-height: 1;
   }
 }
 
