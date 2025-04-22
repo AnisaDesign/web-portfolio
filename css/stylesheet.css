@@ -867,7 +867,7 @@ figcaption {
 .nav-item {
   display: flex;
   align-items: center;
-  gap: 1rem; /* small space between text and arrow */
+  gap: 1.5rem; /* small space between text and arrow */
   text-decoration: none;
   color: #414141;
 }
@@ -1059,21 +1059,81 @@ figcaption {
 .research-title {
   display: flex;
   justify-content: center;
-  padding-bottom: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.3;
+  font-weight: 700;
 }
 
 .research-content {
   margin: 0 auto;
-  width: 960px;
-  max-width: 100%;
-  padding-bottom: 2rem;
+  width: 80%;
+  max-width: 960px;
+  padding: 2rem 1rem 4rem 1rem;
 }
 
 .bibliography {
   display: flex;
-  padding-top: 1rem;
   justify-content: center;
-  padding-bottom: 1rem;
+  padding: 3rem 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.hanging {
+  text-indent: -1.5rem;
+  margin-left: 1.5rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.moodboard-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+.moodboard-image figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Pagination Container */
+.nav-container-center {
+  display: flex;
+  justify-content: flex-end; /* move to right */
+  padding: 2rem;
+  background-color: #f5d320;
+}
+
+/* Pagination Link */
+.nav-item.next {
+  display: flex;
+  align-items: right;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  margin-right: 18rem;
+}
+
+/* Hover effect */
+.nav-item.next:hover {
+  transform: translateX(5px);
+}
+
+/* Text inside */
+.nav-text-research {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
 }
 
 /*---------Floopy----------*/
@@ -1424,6 +1484,22 @@ ul.footer-columns {
     font-size: 1rem;
     line-height: 1.4;
     text-align: center;
+  }
+
+  /* Research subpage for mobile*/
+
+  .research-content {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .research-title {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .bibliography {
+    font-size: 1.5rem;
   }
 }
 
