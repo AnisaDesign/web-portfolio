@@ -1268,6 +1268,33 @@ ul.footer-columns {
     max-width: 100%;
     text-align: center;
   }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-wrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .card img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .card-lower-description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
 }
 
 /* Small device */
