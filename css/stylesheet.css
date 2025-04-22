@@ -1103,36 +1103,55 @@ figcaption {
   margin-top: 0.5rem;
 }
 
-/* Pagination Container */
-.nav-container-center {
+/* -- Pagination Container --*/
+.nav-container-left,
+.nav-container-right {
   display: flex;
-  justify-content: flex-end; /* move to right */
-  padding: 2rem;
+  padding: 2rem 2rem;
   background-color: #f5d320;
 }
 
+.nav-container-left {
+  justify-content: flex-start;
+}
+
+.nav-container-right {
+  justify-content: flex-end;
+}
+
 /* Pagination Link */
+.nav-item.left,
 .nav-item.next {
   display: flex;
-  align-items: right;
+  align-items: center; /* fix invalid 'right' */
   gap: 1.5rem;
   text-decoration: none;
   color: inherit;
   font-weight: 600;
   font-size: 1rem;
   transition: transform 0.3s ease;
-  margin-right: 18rem;
+  margin: 0 18rem;
 }
 
 /* Hover effect */
+.nav-item.left:hover,
 .nav-item.next:hover {
   transform: translateX(5px);
 }
 
 /* Text inside */
+.nav-text-left,
 .nav-text-research {
   display: flex;
   flex-direction: column;
+  line-height: 1.4;
+}
+
+.nav-text-left {
+  text-align: left;
+}
+
+.nav-text-research {
   text-align: right;
 }
 
@@ -1489,13 +1508,19 @@ ul.footer-columns {
   /* Research subpage for mobile*/
 
   .research-content {
-    width: 90%;
-    padding: 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    line-height: 1.6;
   }
 
   .research-title {
-    font-size: 1.5rem;
-    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 2rem 0 1rem;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .bibliography {
