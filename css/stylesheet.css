@@ -444,6 +444,23 @@ section.project {
   border: none;
 }
 
+/* Linhan branding */
+.project-cards-face {
+  display: flex;
+  justify-content: center; /* center content horizontally */
+  align-items: center; /* center content vertically if needed */
+  gap: 2rem; /* spacing between images */
+  flex-wrap: wrap; /* ensures responsiveness */
+  margin-top: 2rem;
+}
+
+.face-card {
+  width: 100%;
+  max-width: 400px; /* You can increase this to 450px if you'd like more size */
+  height: auto;
+  border-radius: 0.5rem;
+}
+
 /*--RESEARCH section--*/
 .image-background-01 {
   display: flex;
@@ -817,9 +834,8 @@ figcaption {
 
 .cards {
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  padding: 0;
+  flex-direction: center;
+  align-items: center;
 }
 
 .card-wrapper {
@@ -850,9 +866,9 @@ figcaption {
 
 /*Pagination*/
 
-.nav-container-outer {
+.project-nav-container {
   width: 100%;
-  background-color: #f5d320; /* yellow full background */
+  background-color: #f5d320;
 }
 
 .nav-container {
@@ -864,37 +880,41 @@ figcaption {
   padding: 2rem 1rem;
 }
 
-.nav-item {
+.project-nav-item {
   display: flex;
   align-items: center;
-  gap: 1.5rem; /* small space between text and arrow */
+  gap: 1.2rem;
   text-decoration: none;
-  color: #414141;
+  color: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
 }
 
-.left {
-  justify-content: flex-start;
+.project-nav-item.left:hover {
+  transform: translateX(-5px); /* move left */
 }
 
-.right {
-  justify-content: flex-end;
+.project-nav-item.right:hover {
+  transform: translateX(5px); /* move right */
 }
 
-.nav-text {
+.project-nav-text-left,
+.project-nav-text-right {
   display: flex;
   flex-direction: column;
 }
 
-.left .nav-text {
+.project-nav-text-left {
   text-align: left;
 }
 
-.right .nav-text {
+.project-nav-text-right {
   text-align: right;
 }
 
 .arrow {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 /* ------------Brand & Design ---------*/
@@ -1103,7 +1123,7 @@ figcaption {
   margin-top: 0.5rem;
 }
 
-/* -- Pagination Container --*/
+/* -- Research Pagination Container --*/
 .nav-container-left,
 .nav-container-right {
   display: flex;
@@ -1134,11 +1154,14 @@ figcaption {
 }
 
 /* Hover effect */
-.nav-item.left:hover,
-.nav-item.next:hover {
-  transform: translateX(5px);
+
+.nav-item.left:hover {
+  transform: translateX(-5px); /* move left */
 }
 
+.nav-item.next:hover {
+  transform: translateX(5px); /* move right */
+}
 /* Text inside */
 .nav-text-left,
 .nav-text-research {
@@ -1532,6 +1555,19 @@ ul.footer-columns {
 
   .bibliography p {
     word-break: break-word;
+  }
+
+  /*Linhan page for mobile*/
+  .project-cards-face {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .face-card01 {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
   }
 
   /*Pagination for Mobile*/
