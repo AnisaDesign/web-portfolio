@@ -245,14 +245,6 @@ mark {
   justify-content: center;
 }
 
-.project:nth-of-type(even) {
-  background-color: #fafafa;
-  padding: 6rem 2rem;
-  margin: 0;
-  width: 100%;
-  border-radius: 0;
-}
-
 ol.sub-text {
   padding-left: 1.5rem;
   margin-top: 1rem;
