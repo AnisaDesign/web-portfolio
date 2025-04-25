@@ -1382,6 +1382,10 @@ ul.footer-columns {
     width: 100%;
   }
 
+  .campaign-heading {
+    margin-bottom: 2rem; /* smaller gap for mobile */
+  }
+
   .campaign-heading h1 {
     font-size: 2rem;
   }
