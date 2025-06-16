@@ -314,7 +314,6 @@ ol.sub-text li {
   line-height: 1;
   font-size: 1.6rem;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 2px;
   padding-right: 2rem; /* space between repeats */
 }
