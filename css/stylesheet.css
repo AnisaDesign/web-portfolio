@@ -92,6 +92,7 @@ body {
   color: #414141;
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease forwards;
+  overflow-x: hidden;
 }
 
 @keyframes fadeInUp {
@@ -262,6 +263,72 @@ ol.sub-text li {
   text-align: left;
   line-height: 1.6;
 }
+
+.hello-image {
+  animation: slideIn 1.2s ease-out forwards, floatHello 6s ease-in-out 1.3s infinite;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+  @keyframes floatHello {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.scrolling-banner {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  background: transparent;
+  margin: 3rem 0 3rem 0;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.scrolling-track {
+  display: flex;
+  width: max-content;
+  animation: scrollBanner 40s linear infinite;
+}
+
+.scrolling-content {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: "Nunito", sans-serif;
+  line-height: 1;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-right: 2rem; /* space between repeats */
+}
+
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 
 /* Paragraph text */
 
@@ -560,6 +627,22 @@ section.project {
   margin-left: 0;
   margin-right: 1rem;
 }
+
+.hero-intro {
+  max-width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.hero-intro h1 {
+  font-size: 0.5rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+  color: #111;
+}
+
 
 .medium-text {
   max-width: 100%;
@@ -1411,6 +1494,25 @@ ul.footer-columns {
   .text {
     margin: 0 auto;
     padding: 1rem;
+  }
+
+   /*inline text*/
+
+.scrolling-banner {
+    padding: 0.5rem 1rem; /* adds horizontal breathing room */
+    overflow: hidden;
+  }
+
+  .scrolling-track {
+    animation-duration: 60s;
+    padding-left: 1rem;
+  }
+
+  .scrolling-content {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    padding-right: 1rem;
+    text-wrap: nowrap;
   }
 
   /*cards*/
