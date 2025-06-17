@@ -1322,6 +1322,62 @@ margin: 0 auto;
   border: none;
 }
 
+/* ------------ Footer Style Draft------------ */
+
+.custom-footer {
+  background: url(../images/centre\ island_toronto2025_01.jpg)center/cover no-repeat;
+  min-height: 300px;
+  color: #fff;
+  padding:4rem 2rem;
+  font-family: "Open Sans", sans-serif;
+  border-top: 8px solid #f5d320;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:2rem;
+}
+
+.footer-left{
+  flex: 1 1 300px;
+}
+
+.footer-slogan {
+  font-size: 2rem;
+  font-weight: bold;
+ color: #414141;
+  max-width:400px;
+  line-height:1.4;
+}
+
+.footer-right {
+  display: flex;
+  gap:4rem;
+}
+
+.footer-column h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+ color: #414141;
+}
+
+.footer-column a {
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+  color: #f5d320;
+  transition: opacity 0.3s;
+}
+
+.footer-column a:hover {
+  opacity: 0.7;
+}
+
+
+
 /* ------------ Footer Style------------ */
 
 /* Footer container */
@@ -1391,6 +1447,8 @@ ul.footer-columns {
   display: block; /* stack content vertically on small screens */
   padding: 1rem;
 }
+
+
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
