@@ -1322,39 +1322,49 @@ margin: 0 auto;
   border: none;
 }
 
-/* ------------ Footer Style Draft------------ */
+/* ------------ Footer Style 01------------ */
 
 .custom-footer {
+  width: 100%;
   background: url(../images/centre\ island_toronto2025_01.jpg)center/cover no-repeat;
   min-height: 300px;
   color: #fff;
-  padding:4rem 2rem;
+  padding: 2rem;
   font-family: "Open Sans", sans-serif;
-  border-top: 8px solid #f5d320;
+  border-top: 4px solid #f5d320;
 }
 
 .footer-inner{
   display:flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap:2rem;
+  gap:4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .footer-left{
-  flex: 1 1 300px;
+  flex: 1;
+  max-width: 600px;
 }
 
 .footer-slogan {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
- color: #414141;
-  max-width:400px;
-  line-height:1.4;
+  color: #414141;
+  line-height: 1.2;
+  max-width: 600px;
 }
 
 .footer-right {
   display: flex;
-  gap:4rem;
+  gap: 4rem;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-width: 600px;
 }
 
 .footer-column h4 {
@@ -1368,12 +1378,21 @@ margin: 0 auto;
   display: block;
   text-decoration: underline;
   margin-bottom: 0.5rem;
-  color: #f5d320;
+  color: #fff;
   transition: opacity 0.3s;
 }
 
 .footer-column a:hover {
   opacity: 0.7;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f5d320;
 }
 
 
@@ -1847,6 +1866,38 @@ ul.footer-columns {
   .nav-item.next .arrow {
     font-size: 1.5rem;
     line-height: 1;
+  }
+
+  /*Footer01*/
+  .footer-inner {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .footer-left {
+    max-width: 100%;
+  }
+
+  .footer-slogan {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    max-width: 100%;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .footer-column h4 {
+    font-size: 1rem;
+  }
+
+  .footer-column a {
+    font-size: 0.95rem;
   }
 }
 
