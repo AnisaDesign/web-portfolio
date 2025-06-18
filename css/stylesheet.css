@@ -1343,6 +1343,30 @@ margin: 0 auto;
   border-top: 4px solid #f5d320;
 }
 
+.custom-footer02 {
+  width: 100%;
+  background: url(../images/toronto_butterfly.jpg)center/cover no-repeat;
+  background-attachment: scroll;
+  overflow: hidden;
+  min-height: 300px;
+  color: #fff;
+  padding: 2rem;
+  font-family: "Open Sans", sans-serif;
+  border-top: 4px solid #f5d320;
+}
+
+.custom-footer03 {
+  width: 100%;
+  background: url(../images/toronto_swans.jpg)center/cover no-repeat;
+  background-attachment: scroll;
+  overflow: hidden;
+  min-height: 300px;
+  color: #fff;
+  padding: 2rem;
+  font-family: "Open Sans", sans-serif;
+  border-top: 4px solid #f5d320;
+}
+
 .footer-wrapper{
   max-width: 1200px;
   margin: 0 auto;
@@ -1374,6 +1398,16 @@ margin: 0 auto;
   text-overflow: unset;
 }
 
+.footer-slogan02 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #fff;
+  white-space: normal;      /* Allow wrapping if needed */
+  overflow: visible;        /* No cut-off */
+  text-overflow: unset;
+}
+
 .footer-right {
   display: flex;
   gap: 4rem;
@@ -1390,7 +1424,22 @@ margin: 0 auto;
  color: #414141;
 }
 
+.footer-column02 h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+ color: #fff;
+}
+
 .footer-column a {
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  transition: opacity 0.3s;
+}
+
+.footer-column02 a {
   display: block;
   text-decoration: underline;
   margin-bottom: 0.5rem;
