@@ -93,6 +93,8 @@ body {
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease forwards;
   overflow-x: hidden;
+  cursor: url('../images/butterflycursor.png'), auto;
+  cursor: url('../images/butterflycursor.png') pointer;
 }
 
 @keyframes fadeInUp {
