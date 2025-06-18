@@ -349,7 +349,6 @@ ol.sub-text li {
 .wide-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 /* Section padding */
@@ -1324,9 +1323,19 @@ margin: 0 auto;
 
 /* ------------ Footer Style 01------------ */
 
+.footer-wrapper,
+.footer-inner,
+.footer-left,
+.footer-right {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
 .custom-footer {
   width: 100%;
-  background: url(../images/centre\ island_toronto2025_01.jpg)center/cover no-repeat;
+  background: url(../images/centreisland_toronto2025_01.jpg)center/cover no-repeat;
+  background-attachment: scroll;
+  overflow: hidden;
   min-height: 300px;
   color: #fff;
   padding: 2rem;
@@ -1334,41 +1343,48 @@ margin: 0 auto;
   border-top: 4px solid #f5d320;
 }
 
-.footer-inner{
-  display:flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap:4rem;
+.footer-wrapper{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap; /* prevents wrapping */
+  gap: 4rem;
 }
 
 .footer-left{
-  flex: 1;
-  max-width: 600px;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .footer-slogan {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  color: #414141;
   line-height: 1.2;
-  max-width: 600px;
+  color: #414141;
+  white-space: normal;      /* Allow wrapping if needed */
+  overflow: visible;        /* No cut-off */
+  text-overflow: unset;
 }
 
 .footer-right {
   display: flex;
   gap: 4rem;
-  flex: 1;
   justify-content: flex-end;
   align-items: flex-start;
-  max-width: 600px;
+  flex: 0 0 300px;   /* fixed width */
+  max-width: 300px;
 }
 
 .footer-column h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 1rem;
  color: #414141;
@@ -1871,6 +1887,7 @@ ul.footer-columns {
   /*Footer01*/
   .footer-inner {
     flex-direction: column;
+    align-items: flex-start;
     gap: 2rem;
     padding: 0 1rem;
   }
@@ -1883,13 +1900,22 @@ ul.footer-columns {
     font-size: 1.5rem;
     line-height: 1.3;
     max-width: 100%;
+    white-space: normal;
+    margin: 0;
   }
 
   .footer-right {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1.5rem;
     align-items: flex-start;
+        max-width: 100%;
     max-width: 100%;
+    width:100%;
+  }
+
+    .footer-column {
+    width: 100%;
   }
 
   .footer-column h4 {
@@ -1898,6 +1924,13 @@ ul.footer-columns {
 
   .footer-column a {
     font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+    .footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 1rem;
   }
 }
 
