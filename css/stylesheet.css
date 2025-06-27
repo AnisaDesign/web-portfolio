@@ -701,6 +701,40 @@ section.project {
   margin-bottom: 1rem;
 }
 
+.about-experience {
+  max-width: 900px;
+  margin: 0 auto;
+  padding:2rem;
+}
+
+.timeline{
+  display: flex;
+  flex-direction: column;
+  gap:0.2rem;
+}
+
+.timeline-item{
+  display: flex;
+  justify-content: space-between;
+  flex: wrap;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.timeline-item .date {
+  font-weight: 600;
+  width: 40%;
+  min-width: 150px;
+}
+
+.timeline-item .desc {
+  width: 55%;
+  min-width: 200px;
+  text-align: left;
+}
+
+
+
 /*---//----*/
 
 .headline-wrapper02 {
