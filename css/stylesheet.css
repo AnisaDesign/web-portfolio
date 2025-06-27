@@ -707,10 +707,14 @@ section.project {
   padding:2rem;
 }
 
+.about-experience h3 {
+  margin-bottom: 0.8rem;
+}
+
 .timeline{
   display: flex;
   flex-direction: column;
-  gap:0.2rem;
+  gap:0.5rem;
 }
 
 .timeline-item{
@@ -724,12 +728,13 @@ section.project {
 .timeline-item .date {
   font-weight: 600;
   width: 40%;
-  min-width: 150px;
+  min-width: 120px;
+  text-align: left;
 }
 
 .timeline-item .desc {
   width: 55%;
-  min-width: 200px;
+  min-width: 180px;
   text-align: left;
 }
 
@@ -1979,6 +1984,23 @@ ul.footer-columns {
   .nav-item.next .arrow {
     font-size: 1.5rem;
     line-height: 1;
+  }
+
+  /*About page for mobile*/
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-item .date,
+  .timeline-item .desc {
+    width: 100%;
+    text-align: left;
+  }
+
+  .timeline-item .desc {
+    margin-top: 0.25rem;
   }
 
   /*Footer01*/
