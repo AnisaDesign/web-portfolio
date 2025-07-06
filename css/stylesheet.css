@@ -468,6 +468,10 @@ section.project {
   margin-bottom: 0.5rem;
 }
 
+.highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #f5d320 60%);
+}
+
 .subhead02 {
   font-size: 1.75rem;
 }
@@ -2131,6 +2135,10 @@ ul.footer-columns {
   }
 
     .footer-column {
+    width: 100%;
+  }
+
+      .footer-column02 {
     width: 100%;
   }
 
