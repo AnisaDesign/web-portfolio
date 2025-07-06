@@ -51,7 +51,7 @@ a {
   justify-content:space-between;
   align-items: center;
   background-color: #f7f7f7;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -69,7 +69,7 @@ button:focus {
 .nav_list{
   list-style: none;
   display:flex;
-  gap:2rem;
+  gap:4rem;
   margin: 0;
   padding:0;
 }
@@ -1754,6 +1754,7 @@ ul.footer-columns {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
+    gap:1rem;
   }
 
   .nav-toggle {
@@ -2107,6 +2108,7 @@ ul.footer-columns {
 
   .footer-left {
     max-width: 100%;
+    text-align: center;
   }
 
   .footer-slogan {
@@ -2125,6 +2127,7 @@ ul.footer-columns {
         max-width: 100%;
     max-width: 100%;
     width:100%;
+    text-align: center;
   }
 
     .footer-column {
