@@ -45,26 +45,76 @@ a {
   text-decoration: none;
 }
 
-#header {
+
+.header {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
+  background-color: #f7f7f7;
+  padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  width: 100%;
-  height: 80px;
-  background-color: #f7f7f7;
-  padding: 0 80px;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
   z-index: 1000;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
+.nav {
+  display: none;
+}
+
+.nav_list{
   list-style: none;
+  display:flex;
+  gap:2rem;
+  margin: 0;
+  padding:0;
+}
+
+.nav_link {
+  text-decoration: none;
+  color:#414141;
+  font-size: 1rem;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 100%;
+  height: 2px;
+  background: #414141;
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #414141;
+  transition: 0.3s;
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(8px);
+}
+
+
+.mobile-menu {
+  display: none;
 }
 
 .nav-links li {
@@ -74,8 +124,10 @@ a {
 .nav-links a {
   text-decoration: none;
   color: #414141;
+  font-size: 1rem;
   transition: all 0.3s ease 0s;
 }
+
 
 /* Heading Styles */
 
@@ -1595,21 +1647,55 @@ ul.footer-columns {
 }
 
 @media (min-width: 768px) {
-  .nav-links {
+
+    #header {
     flex-direction: row;
-    gap: 2rem;
     align-items: center;
-    padding: 0;
+    justify-content: space-between;
   }
+
+   .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border:none;
+    cursor: pointer;
+  }
+
+    .nav-links {
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    position: absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+  text-align: center;
+  }
+
+  .nav-links.active {
+  display: flex;
+}
 
   .nav-links li {
     margin: 0 1rem;
   }
 
-  #header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  .nav-links a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #414141;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+    #nav {
+    display: block !important; /* always show nav on desktop */
   }
 
   .row {
@@ -1640,40 +1726,32 @@ ul.footer-columns {
 @media screen and (max-width: 767px) {
   /* headline-media */
 
-  #header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
+    .nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f7f7f7;
     width: 100%;
-    height: auto; /* let it grow with content */
-    background-color: #f7f7f7;
-    padding: 1.5rem 0 1rem 0; /* top bigger, bottom smaller */
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25); /* put the shadow back! */
-    z-index: 1000;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
   }
 
-  .nav-links {
-    display: flex;
+  .nav.nav--visible {
+    max-height: 300px;
+  }
+
+  .nav__list {
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    padding: 0;
-    list-style: none;
+    padding: 1rem 0;
   }
 
-  .nav-links li {
-    margin: 0;
+  .nav-toggle {
+    display: flex;
   }
 
-  .nav-links a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: #414141;
-  }
 
   .headline-media {
     flex-direction: column;
@@ -1869,7 +1947,6 @@ ul.footer-columns {
 
   .outer-container03 {
     display: flex;
-    flex-direction: column; /* stack them */
     align-items: center;
     padding: 2rem 1rem;
     gap: 2rem;
