@@ -1425,6 +1425,80 @@ margin: 0 auto;
   border: none;
 }
 
+/*--------Testimonials-----------*/
+
+.testimonials {
+  max-width: 750px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-list blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-left: 4px solid #ccc;
+  background-color: #f9f9f9;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.testimonial-list blockquote p {
+  margin: 0 0 1rem;
+}
+
+.testimonial-list blockquote footer {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.testimonial-cta {
+  margin: 4rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-box {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.testimonial-box h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.testimonial-link:hover .testimonial-box {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
 /* ------------ Footer Style 01------------ */
 
 .footer-wrapper,
