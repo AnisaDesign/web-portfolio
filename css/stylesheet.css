@@ -15,6 +15,14 @@ html {
   display: block;
 }
 
+/*
+.wrap{
+  max-width: 1200px;   /* keeps content from stretching too wide 
+  margin: 0 auto;      /* centers everything 
+  padding: 0 2rem;     /* adds left/right breathing room 
+}
+*/
+
 .wrapper {
   margin-right: auto;
   margin-left: auto;
@@ -534,6 +542,203 @@ section.project {
   font-size: 1rem;
 }
 
+.genre{
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity:0.6;
+}
+
+p.sub-title{
+margin-top: 5px;
+margin-bottom: 30px;
+width: 250px;
+font-size:14px;
+line-height:18px;
+color:#f5d320;
+font-weight: lighter;
+}
+
+:root {
+  --primary-border: #f5d320;
+  --primary-text: #f5d320;
+  --box-border-radius: 1.4rem;
+  --box-image-radius: 1rem;
+}
+
+.underlined{
+  text-decoration: underline;
+}
+
+.container{
+  height: 100vh;
+} 
+
+.bento-grid{
+  display:grid;
+  grid-template-rows:250px;
+   grid-template-areas: 
+	'label0 label0 label1 label1 label1 label1'
+	'label0 label0 label1 label1 label1 label1'
+	'label0 label0 label2 label2 label3 label3'
+	'label0 label0 label2 label2 label3 label3';
+  gap: 0.6em;
+  height:100%;
+}
+
+.box-1{
+  background-color: #e1d6c4;
+  grid-area: label0;
+}
+
+.top-text{
+  padding: 0.6rem;
+}
+
+.box-content{
+  padding: 0 .8rem 1rem .8rem;
+}
+
+.box-1 .box-content{
+  height: 80%;
+}
+
+.box-1 .box-content .sth-image {
+  height: 76%;
+  overflow: hidden;
+}
+
+.box-1 .box-content .sth-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box-2 {
+  background-color: #8f896a;
+  grid-area:label1;
+}
+
+.box-2 .box-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.box-2 img{
+  width:40%;
+  height: 250px;
+}
+
+.box-3 {
+background-color: #8f896a;
+grid-area: label2;
+}
+
+.box-3 .box-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-3 .box-content img{
+  width:100%;
+  margin-bottom: 1rem;
+}
+
+.box-4 {
+background-color: #8f896a;
+grid-area: label3;
+}
+
+.box {
+  padding-top: 1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--box-border-radius);
+}
+
+.box img {
+  border-radius: var(--box-image-radius);
+  object-fit: cover;
+}
+
+.box-title{
+  margin-bottom: 1.5rem;
+}
+
+.box-title-big {
+  font-size: 30px;
+  margin: 1.5rem 0;
+}
+
+.learn-more{
+  border-top: 1px solid var(--primary-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0 0 1.4rem 1.4rem;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.learn-more:hover{
+  background: var(--primary-text);
+  cursor: pointer;
+}
+
+.learn-more:hover > p {
+  color: white;
+}
+
+.learn-more:hover svg{
+  transform: translateX(10px);
+  fill: white;
+  stroke: white;
+  transition: all 0.3s ease;
+}
+
+.box-tag {
+  border: 1px solid var(--primary-border);
+  display: inline-block;
+  padding: 0 .3rem;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+
+   .box-1 .box-content {
+    height: 100%;
+  }
+  
+  .bento-grid {
+      grid-template-rows: auto;
+     grid-template-areas:
+      'label0'
+      'label1'
+      'label2'
+      'label3';
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 /*--Brands & Design section--*/
 .image-background-02 {
   display: flex;
@@ -926,6 +1131,7 @@ figcaption {
 }
 
 .pagecolumns {
+  max-width: 1200px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
