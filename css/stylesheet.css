@@ -586,7 +586,7 @@ p.sub-title {
 }
 
 .box-1 {
-  background-color: #b7c7ad;
+  background-color: #B7C7AD;
   grid-area: label0;
 }
 
@@ -614,7 +614,7 @@ p.sub-title {
 }
 
 .box-2 {
-  background-color: #bdd5ff;
+  background-color: #BFD3F4;
   grid-area: label1;
 }
 
@@ -631,7 +631,7 @@ p.sub-title {
 }
 
 .box-3 {
-  background-color: #f8bfb1;
+  background-color: #D3C9F6;
   grid-area: label2;
 }
 
@@ -647,7 +647,7 @@ p.sub-title {
 }
 
 .box-4 {
-  background-color: #b7c7ad;
+  background-color: #f8bfb1;
   grid-area: label3;
 }
 
