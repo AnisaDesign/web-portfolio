@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>AnisaDesign</title>
-    <link rel="icon" type="image/svg+xml" href="./images/hello.svg" />
+    <link rel="icon" type="image/svg+xml" href="./images/butterfly_cursor.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
@@ -17,33 +17,38 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="logo">
-      <a href="index.html" class="logo">
-        
-          <img
-            src="./images/logo-anisa.svg"
-            alt="It's a logo with my name"
-            width="89"
-            height="44"
-          />
-      </a>
-      </div>
+    <header>        
+<div class="navbar" id="navbar">
+  <div class="logo01">
+    <a href="index.html" class="logo01">
+      <img
+        src="./images/logo-anisa.svg"
+        alt="It's a logo with my name"
+        width="89"
+        height="44"
+      />
+    </a>
+  </div>
 
-  <!-- Hamburger button -->
-  <button class="nav-toggle" aria-label="Toggle navigation">
-    <span class="hamburger"></span>
+  <!-- hamburger button -->
+  <button class="nav-toggle" aria-label="Toggle navigation"
+          aria-controls="navlinks" aria-expanded="false">
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
   </button>
 
-      <nav class="nav">
-        <ul class="nav_list">
-          <li><a href="uxui.html" class="nav_link">UX/UI</a></li>
-          <li><a href="creative-projects.html" class="nav_link">BRANDS & DESiGN</a></li>
-          <li><a href="research.html" class="nav_link">RESEARCH</a></li>
-          <li><a href="about.html" class="nav_link">ABOUT</a></li>
-        </ul>
-      </nav>
+  <!-- navigation links -->
+  <div class="navlinks" id="navlinks">
+    <a href="uxui.html">UX/UI</a>
+    <a href="creative-projects.html">BRANDS & DESiGN</a>
+    <a href="research.html">RESEARCH</a>
+    <a href="about.html">ABOUT</a>
+  </div>
+</div>
     </header>
+
+    <div class="page-anim">
 
     <main>
       <!--Works-->
@@ -115,6 +120,8 @@
         </div>
       </div>
     </main>
+
+  </div>
 
           <!--Link to Javascript-->
 <script src="js/script.js"></script>
