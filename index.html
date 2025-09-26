@@ -1,5 +1,4 @@
 <!DOCTYPE html>
- <!-- I designed and built this website using HTML, CSS and JavaScript-->
 
 <html lang="en">
   <head>
@@ -36,7 +35,8 @@
   </head>
 
   <body>
-    <header class="header">
+    <header>
+      <!--
       <div class="logo">
         <a href="index.html" class="logo">
           <img
@@ -46,40 +46,41 @@
             height="44"
           />
         </a>
-      </div>
+      </div>-->
 
-      <!-- Hamburger button -->
+      <!-- Hamburger button 
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span class="hamburger"></span>
       </button>
-
+<!--
       <nav class="nav">
         <ul class="nav_list">
           <li><a href="uxui.html" class="nav_link">UX/UI</a></li>
-          <li>
-            <a href="creative-projects.html" class="nav_link"
-              >BRANDS & DESiGN</a
-            >
-          </li>
+          <li><a href="creative-projects.html" class="nav_link">BRANDS & DESiGN</a></li>
           <li><a href="research.html" class="nav_link">RESEARCH</a></li>
           <li><a href="about.html" class="nav_link">ABOUT</a></li>
         </ul>
-      </nav>
-    </header>
+      </nav>-->
 
-    <main>
-        <div class="scrolling-banner">
-          <div class="scrolling-track">
-            <div class="scrolling-content">
-              UX · UI · BRANDiNG · MOTiON · CASE STUDiES · RESEARCH · WiREFRAMES
-              · PROTOTYPES · ViSUAL DESiGN ·
-            </div>
-            <div class="scrolling-content">
-              UX · UI · BRANDiNG · MOTiON · CASE STUDiES · RESEARCH · WiREFRAMES
-              · PROTOTYPES · ViSUAL DESiGN ·
-            </div>
+        
+        <div class="navbar" id="navbar">
+          <div class="logo01"><a href="index" class="logo01"><img
+            src="./images/logo-anisa.svg"
+            alt="It's a logo with my name"
+            width="89"
+            height="44"
+          /></a> </div>
+          <div class="navlinks">
+            <a href="uxui.html">UX/UI</a>
+            <a href="creative-projects.html">BRANDS & DESiGN</a>
+            <a href="research.html">RESEARCH</a>
+            <a href="about.html">ABOUT</a>
           </div>
         </div>
+    </header>
+
+    <div class="page-anim">
+    <main>
 
       <section class="project">
         <div class="row headline-media">
@@ -103,6 +104,19 @@
           </div>
         </div>
       </section>
+
+      <div class="scrolling-banner">
+          <div class="scrolling-track">
+            <div class="scrolling-content">
+              UX · UI · BRANDiNG · MOTiON · CASE STUDiES · RESEARCH · WiREFRAMES
+              · PROTOTYPES · ViSUAL DESiGN ·
+            </div>
+            <div class="scrolling-content">
+              UX · UI · BRANDiNG · MOTiON · CASE STUDiES · RESEARCH · WiREFRAMES
+              · PROTOTYPES · ViSUAL DESiGN ·
+            </div>
+          </div>
+        </div>
 
       <section class="project">
         <div class="container">
@@ -307,8 +321,10 @@
         <p>© 2025 Anisa Design</p>
       </div>
     </footer>
+        </div>
 
     <!--Link to Javascript-->
     <script src="js/script.js"></script>
+
   </body>
 </html>

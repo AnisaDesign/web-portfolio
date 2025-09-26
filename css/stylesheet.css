@@ -12,8 +12,11 @@ html {
 }
 
 .main {
-  display: block;
+  padding-top: 80px;
 }
+
+
+
 
 /*
 .wrap{
@@ -56,6 +59,7 @@ a {
   text-decoration: none;
 }
 
+/*
 .header {
   display: flex;
   justify-content: space-between;
@@ -66,7 +70,7 @@ a {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-}
+}*/
 
 button:focus {
   outline: 2px solid #facc15;
@@ -143,7 +147,78 @@ button:focus {
   font-size: 1rem;
   transition: all 0.3s ease 0s;
 }
+/*Base Navbar*/
 
+.navbar {
+  position: fixed;          /* pin to viewport */
+  top: 0;
+  left: 5%;
+  right: 5%;                 /* full width, no translate centering */
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* your glass look (keep if you want) */
+  background: rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  z-index: 9999;
+  transition: padding .25s ease; /* for shrink later */
+}
+
+/* Optional shrink look */
+.navbar.shrink {
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-radius: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+.navbar.hide-full,
+.navbar.show-mini {
+  top: 0 !important;
+  opacity: 1 !important;}
+
+
+.page {               /* wrap your content in <div class="page">...</div> */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp .6s ease forwards;
+}
+
+.page-anim {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp .6s ease forwards;
+}
+
+    /* Logo */
+
+    .navbar.shrink .logo01 {
+      font-size: 18px;
+    }
+
+    .navlinks{
+      display:flex;
+      gap:80px;
+    }
+
+.navlinks a {
+      color: #414141;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.2s, font-size 0.3s;
+    }
+
+.navbar.shrink .navlinks a {
+      font-size: 16px;
+    }
+
+    .navlinks a:hover {
+      color: #facc15;
+    }
 /* Heading Styles */
 
 /* ------------------------------
@@ -155,10 +230,10 @@ body {
   font-weight: 400;
   line-height: 1.6;
   margin: 0;
-  opacity: 0;
+  opacity: 1;
   color: #414141;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
+  /*transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;*/
   overflow-x: hidden;
   cursor: url("../images/butterflycursor.png") 16 16, auto;
   cursor: url("../images/butterflycursor.png") pointer;
@@ -586,7 +661,7 @@ p.sub-title {
 }
 
 .box-1 {
-  background-color: #B7C7AD;
+  background-color: #b7c7ad;
   grid-area: label0;
 }
 
@@ -614,7 +689,7 @@ p.sub-title {
 }
 
 .box-2 {
-  background-color: #BFD3F4;
+  background-color: #bfd3f4;
   grid-area: label1;
 }
 
@@ -631,7 +706,7 @@ p.sub-title {
 }
 
 .box-3 {
-  background-color: #D3C9F6;
+  background-color: #d3c9f6;
   grid-area: label2;
 }
 
@@ -657,7 +732,7 @@ p.sub-title {
   padding-top: 1rem;
   border-radius: var(--box-border-radius);
   overflow: hidden;
-  row-gap: .5rem;
+  row-gap: 0.5rem;
 }
 
 .box img {
@@ -1916,6 +1991,34 @@ ul.footer-columns {
     justify-content: space-between;
   }
 
+  .navbar{
+    padding: 12px 16px;
+    left: 0; right: 0;
+    border-radius: 0;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur (16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .logo01 img{width: 72px; height:auto;}
+
+  .navlinks{
+    display:flex;
+    flex-wrap: wrap;
+    gap:14px;
+    justify-content:center;
+  }
+
+  .navlinks a{
+    font-size:16px;
+    padding: 8px 10px;
+    line-height: 1;
+  }
+
+  .main {
+    padding-top:72px;
+  }
+  
   .nav-links {
     display: none;
     flex-direction: column;
