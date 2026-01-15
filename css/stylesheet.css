@@ -654,7 +654,7 @@ p.sub-title {
     "label1 label1 label1 label1 label0 label0"
     "label2 label2 label3 label3 label0 label0"
     "label2 label2 label3 label3 label0 label0";
-  gap: 0.6em;
+  gap: 1em;
   height: auto;
 }
 
