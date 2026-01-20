@@ -15,6 +15,21 @@ html {
   padding-top: 80px;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* hides the sideways scroll */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /*
 .wrap{
   max-width: 1200px;   /* keeps content from stretching too wide 
@@ -27,7 +42,7 @@ html {
   margin-right: auto;
   margin-left: auto;
   /*max-width: 960px;*/
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 /* Responsive Images */
@@ -442,7 +457,7 @@ ol.sub-text li {
   background: transparent;
   margin: 3rem 0 3rem 0;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -491,7 +506,7 @@ ol.sub-text li {
 }
 
 .wide-wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -504,7 +519,7 @@ ol.sub-text li {
   text-align: left;
   padding: 2rem 2rem;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 .project-title,
