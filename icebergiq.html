@@ -106,7 +106,45 @@
             </div>
           </section>
 
-          <!--Banner -->
+
+<div class="ba" id="ba-icebergiq">
+  <!-- BEFORE (base) -->
+  <img
+    src="./images/icebergiq_banner_before.jpg"
+    alt="IcebergIQ website before redesign"
+    class="ba__img"
+  />
+
+  <!-- AFTER (revealed) -->
+  <div class="ba__after">
+    <img
+      src="./images/icebergiq_banner_after.jpg"
+      alt="IcebergIQ website after redesign"
+      class="ba__img"
+    />
+  </div>
+
+  <!-- Drag handle -->
+  <div
+    class="ba__handle"
+    role="separator"
+    aria-orientation="vertical"
+    aria-label="Drag to compare before and after"
+  >
+    <span class="ba__knob">↔</span>
+  </div>
+
+  <!-- Labels -->
+  <span class="ba__label ba__label--before">Before</span>
+  <span class="ba__label ba__label--after">After</span>
+</div>
+
+
+
+
+
+
+          <!--Banner --
 
           <section class="project">
             <div class="wide-wrapper">
@@ -121,7 +159,7 @@
             </div>
           </section>
 
-          <!--The Challenge-->
+          The Challenge-->
 
           <section class="project">
             <div class="wide-wrapper">
@@ -196,6 +234,55 @@
               </figure>
             </div>
           </section>
+
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const ba = document.getElementById("ba-icebergiq");
+    if (!ba) return;
+
+    const handle = ba.querySelector(".ba__handle");
+
+    const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
+
+    const setPos = (clientX) => {
+      const rect = ba.getBoundingClientRect();
+      const x = clamp(clientX - rect.left, 0, rect.width);
+
+      // reveal from RIGHT
+      let pct = ((rect.width - x) / rect.width) * 100;
+
+      // keep handle visible inside the box
+      pct = clamp(pct, 2, 98);
+
+      ba.style.setProperty("--pos", pct + "%");
+    };
+
+    const start = (e) => {
+      e.preventDefault();
+      handle.setPointerCapture?.(e.pointerId);
+      setPos(e.clientX);
+
+      const move = (ev) => setPos(ev.clientX);
+      const end = () => {
+        window.removeEventListener("pointermove", move);
+        window.removeEventListener("pointerup", end);
+      };
+
+      window.addEventListener("pointermove", move);
+      window.addEventListener("pointerup", end);
+    };
+
+    handle.addEventListener("pointerdown", start);
+
+    // click anywhere to jump the handle
+    ba.addEventListener("pointerdown", (e) => {
+      if (!e.target.closest(".ba__handle")) setPos(e.clientX);
+    });
+  });
+</script>
+
+
 
           <!-- PROJECT PAGINATION -->
           <div class="project-nav-container">
