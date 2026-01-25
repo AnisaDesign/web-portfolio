@@ -103,4 +103,87 @@ document.addEventListener('DOMContentLoaded', () => {
   init();
 })();
 
+  // Testimonial
 
+
+(() => {
+  const carousel = document.querySelector("[data-carousel]");
+  if (!carousel) return;
+
+  const viewport = carousel.querySelector(".say__viewport");
+  const track = carousel.querySelector("[data-track]");
+  const slides = Array.from(track.children);
+  const dotsWrap = carousel.querySelector("[data-dots]");
+
+  const perView = () => {
+    const w = window.innerWidth;
+    if (w >= 1100) return 3; // ✅ desktop
+    if (w >= 720) return 2;
+    return 1;
+  };
+
+  const maxIndex = () => Math.max(0, slides.length - perView()); // 5-3=2 => indices 0..2 (3 dots)
+  const dotCount = () => maxIndex() + 1;
+
+  let index = 0;
+
+  const stepSize = () => {
+    const first = slides[0];
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    return first.getBoundingClientRect().width + gap;
+  };
+
+  const buildDots = () => {
+    dotsWrap.innerHTML = "";
+    for (let i = 0; i < dotCount(); i++) {
+      const dot = document.createElement("button");
+      dot.className = "say__dot";
+      dot.type = "button";
+      dot.setAttribute("aria-label", `Go to testimonials ${i + 1}–${i + perView()}`);
+      dot.addEventListener("click", () => goTo(i));
+      dotsWrap.appendChild(dot);
+    }
+  };
+
+  const updateDots = () => {
+    dotsWrap.querySelectorAll(".say__dot").forEach((d, i) => {
+      d.setAttribute("aria-current", String(i === index));
+    });
+  };
+
+  const goTo = (i) => {
+    index = Math.max(0, Math.min(maxIndex(), i));
+    const step = stepSize();
+    viewport.scrollTo({ left: index * step, behavior: "smooth" });
+    updateDots();
+  };
+
+  // Update dots based on scroll position
+  const setIndexFromScroll = () => {
+    const step = stepSize();
+    if (!step) return;
+    const raw = viewport.scrollLeft / step;
+    index = Math.round(raw);
+    index = Math.max(0, Math.min(maxIndex(), index));
+    updateDots();
+  };
+
+  // Throttle scroll updates with rAF (smooth + efficient)
+  let ticking = false;
+  viewport.addEventListener("scroll", () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      setIndexFromScroll();
+      ticking = false;
+    });
+  });
+
+  const init = () => {
+    buildDots();
+    setIndexFromScroll();
+  };
+
+  window.addEventListener("resize", init);
+  init();
+})();

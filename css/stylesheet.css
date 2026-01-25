@@ -810,12 +810,21 @@ p.sub-title {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-.say__wrap { max-width: 1120px; margin: 0 auto; }
+.say__wrap { max-width: 1120px; margin: 0 auto; margin-bottom: 60px;}
 
 
 /* Carousel */
 .say__carousel { position: relative; }
-.say__viewport { overflow: hidden; }
+.say__viewport { 
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.say__viewport::-webkit-scrollbar{ display:none; }
 
 .say__track {
   list-style: none;
@@ -823,19 +832,24 @@ p.sub-title {
   margin: 0;
   display: flex;
   gap: 18px;
-  transform: translateX(0);
-  transition: transform 420ms cubic-bezier(.2,.85,.2,1);
-  will-change: transform;
 }
 
 /* Responsive card widths */
-.say__slide { flex: 0 0 100%; }
-
-@media (min-width: 720px) {
-  .say__slide { flex-basis: calc(50% - 9px); }
+.say__slide { 
+scroll-snap-align: start;
+  flex: 0 0 100%;         /* mobile: 1 visible */
 }
-@media (min-width: 1100px) {
-  .say__slide { flex-basis: calc(25% - 13.5px); }
+
+@media (min-width: 720px){
+  .say__slide{
+    flex-basis: calc((100% - 18px) / 2); /* tablet: 2 */
+  }
+}
+
+@media (min-width: 1100px){
+  .say__slide{
+    flex-basis: calc((100% - 36px) / 3); /* ✅ desktop: 3 */
+  }
 }
 
 /* Card */
@@ -883,7 +897,7 @@ p.sub-title {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -30px;
+  bottom: -50px;
   background: #d8d8d8;
   border-radius: 999px;
   padding: 10px 14px;
@@ -892,7 +906,8 @@ p.sub-title {
 
 .say__dots { display: flex; gap: 10px; align-items: center; }
 
-.say__dot {
+/* Dots (clickable + indicator) */
+.say__dot{
   width: 10px;
   height: 10px;
   border-radius: 999px;
@@ -902,12 +917,11 @@ p.sub-title {
   padding: 0;
 }
 
-.say__dot[aria-current="true"] { background: #ffffff; }
+.say__dot[aria-current="true"]{ background:#facc15; }
 
-@media (prefers-reduced-motion: reduce) {
-  .say__track { transition: none; }
+@media (prefers-reduced-motion: reduce){
+  .say__viewport{ scroll-behavior: auto; }
 }
-
 
 
 
