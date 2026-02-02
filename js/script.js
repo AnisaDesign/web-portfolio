@@ -187,3 +187,16 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener("resize", init);
   init();
 })();
+
+// Back button behavior//
+const backBtn = document.querySelector('.back-fab');
+
+if (backBtn) {
+  backBtn.addEventListener('click', (e) => {
+    if (window.history.length > 1) {
+      e.preventDefault();
+      window.history.back();
+    }
+  });
+}
+

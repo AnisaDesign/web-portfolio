@@ -402,6 +402,8 @@ mark {
 .coming-soon {
   display: flex;
   justify-content: center;
+  padding: 10px 0;
+  margin: 100px auto;
 }
 
 ol.sub-text {
@@ -2203,6 +2205,50 @@ ul.footer-columns {
   display: block; /* stack content vertically on small screens */
   padding: 1rem;
 }
+
+/* Floating back buttion (bottom left)*/
+
+.back-fab{
+  position: fixed;
+  bottom: 56px;
+  left:32px;
+  width:48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(65, 65, 65, 0.8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+  z-index: 9999;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.back-fab svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+}
+
+.back-fab:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.22);
+  background: #f5d320;
+}
+
+.back-fab:active {
+  transform: scale(0.97);
+}
+
+/* Mobile safe-area support */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .back-fab {
+    bottom: calc(28px + env(safe-area-inset-bottom));
+    left: calc(28px + env(safe-area-inset-left));
+  }
+}
+
+
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
