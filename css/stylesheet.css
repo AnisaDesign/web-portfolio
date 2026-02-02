@@ -2211,7 +2211,7 @@ ul.footer-columns {
 .back-fab{
   position: fixed;
   bottom: 56px;
-  left:32px;
+  left:56px;
   width:48px;
   height: 48px;
   border-radius: 12px;
@@ -2243,8 +2243,8 @@ ul.footer-columns {
 /* Mobile safe-area support */
 @supports (padding: env(safe-area-inset-bottom)) {
   .back-fab {
-    bottom: calc(28px + env(safe-area-inset-bottom));
-    left: calc(28px + env(safe-area-inset-left));
+    bottom: calc(56px + env(safe-area-inset-bottom));
+    left: calc(56px + env(safe-area-inset-left));
   }
 }
 
