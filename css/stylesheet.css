@@ -934,6 +934,7 @@ scroll-snap-align: start;
   position: relative;
   max-width: 1200px;
   margin: 3rem auto;
+  margin-top: 6rem;
   aspect-ratio: 1348 / 767;
   border-radius: 12px;
   overflow: hidden;
