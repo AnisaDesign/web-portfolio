@@ -188,6 +188,53 @@ document.addEventListener('DOMContentLoaded', () => {
   init();
 })();
 
+// ICEBERGIQ BA LEFT-RIGHT SCROLL //
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const ba = document.getElementById("ba-icebergiq");
+    if (!ba) return;
+
+    const handle = ba.querySelector(".ba__handle");
+
+    const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
+
+    const setPos = (clientX) => {
+      const rect = ba.getBoundingClientRect();
+      const x = clamp(clientX - rect.left, 0, rect.width);
+
+      // reveal from RIGHT
+      let pct = ((rect.width - x) / rect.width) * 100;
+
+      // keep handle visible inside the box
+      pct = clamp(pct, 2, 98);
+
+      ba.style.setProperty("--pos", pct + "%");
+    };
+
+    const start = (e) => {
+      e.preventDefault();
+      handle.setPointerCapture?.(e.pointerId);
+      setPos(e.clientX);
+
+      const move = (ev) => setPos(ev.clientX);
+      const end = () => {
+        window.removeEventListener("pointermove", move);
+        window.removeEventListener("pointerup", end);
+      };
+
+      window.addEventListener("pointermove", move);
+      window.addEventListener("pointerup", end);
+    };
+
+    handle.addEventListener("pointerdown", start);
+
+    // click anywhere to jump the handle
+    ba.addEventListener("pointerdown", (e) => {
+      if (!e.target.closest(".ba__handle")) setPos(e.clientX);
+    });
+  });
+
+
 // Back button behavior//
 const backBtn = document.querySelector('.back-fab');
 
