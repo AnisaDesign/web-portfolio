@@ -1998,6 +1998,14 @@ figcaption {
   max-width: 100%;
 }
 
+/* Base text */
+.custom-footer p,
+.custom-footer h4,
+.custom-footer a {
+  opacity: 0.85;
+  transition: opacity 0.3s ease, text-shadow 0.3s ease;
+}
+
 .custom-footer {
   width: 100%;
   background: url(../images/centreisland_toronto2025_01.jpg) center/cover
@@ -2005,10 +2013,22 @@ figcaption {
   background-attachment: scroll;
   overflow: hidden;
   min-height: 300px;
+  position:relative;
   color: #ffffff;
   padding: 2rem;
   font-family: "Open Sans", sans-serif;
   border-top: 4px solid #f5d320;
+  transition: filter 0.3s ease;
+}
+
+.custom-footer::before {
+  content: "";
+  position: absolute;
+  display: none;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease;
+  z-index: 0;
 }
 
 .custom-footer02 {
@@ -2017,10 +2037,22 @@ figcaption {
   background-attachment: scroll;
   overflow: hidden;
   min-height: 300px;
-  color: #fff;
+  position:relative;
+  color: #ffffff;
   padding: 2rem;
   font-family: "Open Sans", sans-serif;
   border-top: 4px solid #f5d320;
+  transition: filter 0.3s ease;
+}
+
+.custom-footer02::before {
+  content: "";
+  position: absolute;
+  display: none;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease;
+  z-index: 0;
 }
 
 .custom-footer03 {
@@ -2029,10 +2061,22 @@ figcaption {
   background-attachment: scroll;
   overflow: hidden;
   min-height: 300px;
+  position: relative;
   color: #fff;
   padding: 2rem;
   font-family: "Open Sans", sans-serif;
   border-top: 4px solid #f5d320;
+  transition: filter 0.3s ease;
+}
+
+.custom-footer03::before {
+  content: "";
+  position: absolute;
+  display: none;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease;
+  z-index: 0;
 }
 
 .custom-footer04 {
@@ -2041,10 +2085,21 @@ figcaption {
   background-attachment: scroll;
   overflow: hidden;
   min-height: 300px;
+  position: relative;
   color: #fff;
   padding: 2rem;
   font-family: "Open Sans", sans-serif;
   border-top: 4px solid #f5d320;
+}
+
+.custom-footer04::before {
+  content: "";
+  position: absolute;
+  display: none;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease;
+  z-index: 0;
 }
 
 .footer-wrapper {
@@ -2053,6 +2108,8 @@ figcaption {
   padding: 0 2rem;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-inner {
@@ -2138,6 +2195,27 @@ figcaption {
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #f5d320;
+}
+
+/* Hover */
+.custom-footer:hover p,
+.custom-footer02:hover p,
+.custom-footer03:hover p,
+.custom-footer04:hover p,
+.custom-footer:hover h4,
+.custom-footer02:hover h4,
+.custom-footer03:hover h4,
+.custom-footer04:hover h4,
+.custom-footer:hover p,
+.custom-footer02:hover p,
+.custom-footer03:hover p,
+.custom-footer04:hover p,
+.custom-footer:hover a,
+.custom-footer02:hover a,
+.custom-footer03:hover a,
+.custom-footer04:hover a {
+  opacity: 1;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
 /* ------------ Footer Style------------ */
