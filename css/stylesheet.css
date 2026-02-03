@@ -1146,7 +1146,7 @@ scroll-snap-align: start;
   flex-direction: row;
   justify-content: space-between;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .project-title,
