@@ -1701,7 +1701,8 @@ figcaption {
 
 .card02 img {
   width: 100%;
-  height: auto;
+  height: 320px;
+    object-fit: cover;     /* crops nicely instead of stretching */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   border-radius: 8px;
 }
