@@ -1584,6 +1584,69 @@ figcaption {
   line-height: 1.4rem;
 }
 
+/* ===== STAGE CARDS ===== */
+.stages {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.stage-card {
+  border-radius: 24px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+
+.stage-card__header {
+  background: #f2f2f2;
+  padding: 1.4rem 1.6rem;
+}
+
+.stage-card__title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #777; /* looks like your screenshot */
+}
+
+.stage-card__body {
+  padding: 1.6rem;
+}
+
+.stage-card__body p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #111;
+}
+
+.stage-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+
+.stage-list li {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .stages-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /*Pagination*/
 
 .project-nav-container {
