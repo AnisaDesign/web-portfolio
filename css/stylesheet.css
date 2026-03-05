@@ -1845,7 +1845,7 @@ figcaption {
   justify-content: center;
   gap: 4rem; /*space between cards*/
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 4rem auto;
   padding: 2rem 2rem;
 }
 
